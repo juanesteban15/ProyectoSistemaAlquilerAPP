@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AplicacionAlquiler/AplicacionAlquiler.csproj" />
+  <Project Path="Presentacion_csn/Presentacion_csn.csproj" />
+</Solution>
