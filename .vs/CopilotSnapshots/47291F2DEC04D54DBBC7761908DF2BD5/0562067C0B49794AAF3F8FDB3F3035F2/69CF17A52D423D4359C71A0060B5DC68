@@ -1,0 +1,66 @@
+﻿using AplicacionAlquiler.Dominio.Catalogo;
+using AplicacionAlquiler.implementaciones;
+using AplicacionAlquiler.interfaces;
+using AplicacionAlquiler.nucleo;
+using Microsoft.EntityFrameworkCore;
+
+namespace presentacion_mst
+{
+    [TestClass]
+    public class TiposCombustiblesPruebas
+    {
+        private IConexion conexion;
+        private TiposCombustibles? entidad = null;
+
+        public TiposCombustiblesPruebas()
+        {
+            this.conexion = new Conexion();
+            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
+        }
+
+        [TestMethod]
+        public void Execute()
+        {
+            Insertar();
+            Consultar();
+            Actualizar();
+            Borrar();
+        }
+
+        public void Insertar()
+        {
+            // El tipo de vehiculo ya existe (lo inserta el script SQL)
+            var tipo = this.conexion.TiposVehiculos!.First(x => x.Nombre == "Carro");
+
+            this.entidad = new TiposCombustibles()
+            {
+                Nombre = "TiposCombustibles_Test",
+                TipoVehiculo = tipo.Id
+            };
+            this.conexion.TiposCombustibles!.Add(this.entidad!);
+            this.conexion.SaveChanges();
+        }
+
+        public void Consultar()
+        {
+            var lista = this.conexion.TiposCombustibles!.ToList();
+            if (!lista.Any(x => x.Id == this.entidad!.Id))
+                throw new Exception("No se encontro el registro insertado");
+        }
+
+        private void Actualizar()
+        {
+            this.entidad!.Nombre = "TiposCombustibles_Test_Mod";
+
+            var entry = this.conexion!.Entry<TiposCombustibles>(this.entidad);
+            entry.State = EntityState.Modified;
+            this.conexion!.SaveChanges();
+        }
+
+        private void Borrar()
+        {
+            this.conexion.TiposCombustibles!.Remove(this.entidad!);
+            this.conexion.SaveChanges();
+        }
+    }
+}

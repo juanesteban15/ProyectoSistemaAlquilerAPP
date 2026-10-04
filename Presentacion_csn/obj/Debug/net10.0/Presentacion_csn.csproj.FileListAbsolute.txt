@@ -78,3 +78,4 @@ C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\Presentacion_csn\obj\Debug\net10.0\Presentacion_csn.pdb
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\Presentacion_csn\obj\Debug\net10.0\Presentacion_csn.genruntimeconfig.cache
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\Presentacion_csn\obj\Debug\net10.0\ref\Presentacion_csn.dll
+C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\Presentacion_csn\obj\Debug\net10.0\Presentacion_csn.sourcelink.json

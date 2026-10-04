@@ -1,0 +1,63 @@
+using AplicacionAlquiler.Dominio.Catalogo;
+using AplicacionAlquiler.implementaciones;
+using AplicacionAlquiler.interfaces;
+using AplicacionAlquiler.nucleo;
+using Microsoft.EntityFrameworkCore;
+
+namespace Presentacion_mst.Catalogo
+{
+    [TestClass]
+    public class MarcasPruebas
+    {
+        private IConexion conexion;
+        private Marcas? entidad = null;
+
+        public MarcasPruebas()
+        {
+            this.conexion = new Conexion();
+            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
+        }
+
+        [TestMethod]
+        public void Execute()
+        {
+            Insertar();
+            Consultar();
+            Actualizar();
+            Borrar();
+        }
+
+        public void Insertar()
+        {
+            this.entidad = new Marcas()
+            {
+                Nombre = "Marcas_Test",
+                TipoVehiculoId = 2
+            };
+            this.conexion.Marcas!.Add(this.entidad!);
+            this.conexion.SaveChanges();
+        }
+
+        public void Consultar()
+        {
+            var lista = this.conexion.Marcas!.ToList();
+            if (!lista.Any(x => x.Id == this.entidad!.Id))
+                throw new Exception("No se encontro el registro insertado");
+        }
+
+        private void Actualizar()
+        {
+            this.entidad!.Nombre = "Marcas_Test_Mod";
+
+            var entry = this.conexion!.Entry<Marcas>(this.entidad);
+            entry.State = EntityState.Modified;
+            this.conexion!.SaveChanges();
+        }
+
+        private void Borrar()
+        {
+            this.conexion.Marcas!.Remove(this.entidad!);
+            this.conexion.SaveChanges();
+        }
+    }
+}

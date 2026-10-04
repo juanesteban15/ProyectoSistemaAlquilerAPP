@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="AplicacionAlquiler/AplicacionAlquiler.csproj" />
   <Project Path="Presentacion_csn/Presentacion_csn.csproj" />
+  <Project Path="Presentacion_mst/Presentacion_mst.csproj" Id="91ea294f-35b4-4084-8093-6cb03bf9aef8" />
 </Solution>

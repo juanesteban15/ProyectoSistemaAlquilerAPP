@@ -3,8 +3,144 @@
   "WorkspaceRootPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2453A2F3-DC22-09FD-B94B-EB8558D9045B}|Presentacion_csn\\Presentacion_csn.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_csn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2453A2F3-DC22-09FD-B94B-EB8558D9045B}|Presentacion_csn\\Presentacion_csn.csproj|solutionrelative:presentacion_csn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\entidades\\vehiculospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\entidades\\vehiculospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\entidades\\tarifaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\entidades\\tarifaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\estadosusuariospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\estadosusuariospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\entidades\\personaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\entidades\\personaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\estadosreservaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\estadosreservaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\metodospagospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\metodospagospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\categoriaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\categoriaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\entidades\\reservaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\entidades\\reservaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\sistemastransmisionespruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\sistemastransmisionespruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\tiposvehiculospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\tiposvehiculospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\tiposcombustiblespruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\tiposcombustiblespruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\marcaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\marcaspruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\estadosvehiculospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\estadosvehiculospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\catalogo\\coloresvehiculospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\catalogo\\coloresvehiculospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\entidades\\usuariospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\entidades\\usuariospruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\proyecto_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\proyecto_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\estadosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\estadosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\presentacion_mst.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\presentacion_mst.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_mst\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA294F-35B4-4084-8093-6CB03BF9AEF8}|Presentacion_mst\\Presentacion_mst.csproj|solutionrelative:presentacion_mst\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\entidades\\vehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\entidades\\vehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\entidades\\tarifas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\entidades\\tarifas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\entidades\\reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\entidades\\reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\entidades\\personas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\entidades\\personas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\tiposvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\tiposvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\tiposcombustibles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\tiposcombustibles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\sistemastransmisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\sistemastransmisiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\metodospagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\metodospagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\estadosvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\estadosvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\estadosreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\estadosreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\coloresvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\coloresvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\dominio\\catalogo\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\catalogo\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2453A2F3-DC22-09FD-B94B-EB8558D9045B}|Presentacion_csn\\Presentacion_csn.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\presentacion_csn\\presentacion_csn.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2453A2F3-DC22-09FD-B94B-EB8558D9045B}|Presentacion_csn\\Presentacion_csn.csproj|solutionrelative:presentacion_csn\\presentacion_csn.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\universidad\\desarrollo de software\\proyectocs\\proyectoalquilervehiculos\\aplicacionalquiler\\proyecto_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
@@ -18,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +166,215 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EstadosReservasPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\EstadosReservasPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\EstadosReservasPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\EstadosReservasPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\EstadosReservasPruebas.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAewBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:57:03.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TarifasPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\TarifasPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Entidades\\TarifasPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\TarifasPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Entidades\\TarifasPruebas.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:00:34.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VehiculosPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\VehiculosPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Entidades\\VehiculosPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\VehiculosPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Entidades\\VehiculosPruebas.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAewBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:21:53.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EstadosUsuariosPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\EstadosUsuariosPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\EstadosUsuariosPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\EstadosUsuariosPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\EstadosUsuariosPruebas.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:57:05.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoriasPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\CategoriasPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\CategoriasPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\CategoriasPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\CategoriasPruebas.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:57:02.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_csn\\Program.cs",
+              "RelativeDocumentMoniker": "Presentacion_csn\\Program.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_csn\\Program.cs",
+              "RelativeToolTip": "Presentacion_csn\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAnwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T04:39:02.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MetodosPagosPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\MetodosPagosPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\MetodosPagosPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\MetodosPagosPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\MetodosPagosPruebas.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAewBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T00:30:35.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReservasPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\ReservasPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Entidades\\ReservasPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\ReservasPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Entidades\\ReservasPruebas.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwDkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:25:26.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonasPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\PersonasPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Entidades\\PersonasPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\PersonasPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Entidades\\PersonasPruebas.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAewBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:00:11.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TiposVehiculosPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\TiposVehiculosPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\TiposVehiculosPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\TiposVehiculosPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\TiposVehiculosPruebas.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T00:36:18.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SistemasTransmisionesPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\SistemasTransmisionesPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\SistemasTransmisionesPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\SistemasTransmisionesPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\SistemasTransmisionesPruebas.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvycAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:22:06.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TiposCombustiblesPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\TiposCombustiblesPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\TiposCombustiblesPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\TiposCombustiblesPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\TiposCombustiblesPruebas.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAywB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:22:01.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MarcasPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\MarcasPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\MarcasPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\MarcasPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\MarcasPruebas.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA3wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:21:57.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EstadosVehiculosPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\EstadosVehiculosPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\EstadosVehiculosPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\EstadosVehiculosPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\EstadosVehiculosPruebas.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwCEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:58:16.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ColoresVehiculosPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\ColoresVehiculosPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Catalogo\\ColoresVehiculosPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Catalogo\\ColoresVehiculosPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Catalogo\\ColoresVehiculosPruebas.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:57:04.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\MSTestSettings.cs",
+              "RelativeToolTip": "Presentacion_mst\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T04:41:04.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "proyecto_db.sql ",
               "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\proyecto_db.sql",
               "RelativeDocumentMoniker": "AplicacionAlquiler\\proyecto_db.sql",
@@ -38,6 +382,240 @@
               "RelativeToolTip": "AplicacionAlquiler\\proyecto_db.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2026-10-02T04:25:43.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsuariosPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\UsuariosPruebas.cs",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Entidades\\UsuariosPruebas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Entidades\\UsuariosPruebas.cs",
+              "RelativeToolTip": "Presentacion_mst\\Entidades\\UsuariosPruebas.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:00:11.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EstadosUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\EstadosUsuarios.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\EstadosUsuarios.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\EstadosUsuarios.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\EstadosUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:58:50.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Presentacion_mst",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Presentacion_mst.csproj",
+              "RelativeDocumentMoniker": "Presentacion_mst\\Presentacion_mst.csproj",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Presentacion_mst.csproj",
+              "RelativeToolTip": "Presentacion_mst\\Presentacion_mst.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-04T00:07:48.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SistemasTransmisiones.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\SistemasTransmisiones.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\SistemasTransmisiones.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\SistemasTransmisiones.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\SistemasTransmisiones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:09.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TiposCombustibles.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\TiposCombustibles.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\TiposCombustibles.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\TiposCombustibles.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\TiposCombustibles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:11.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Usuarios.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Entidades\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Usuarios.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Entidades\\Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:02:24.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TiposVehiculos.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\TiposVehiculos.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\TiposVehiculos.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\TiposVehiculos.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\TiposVehiculos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:17.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Personas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Personas.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Entidades\\Personas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Personas.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Entidades\\Personas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:22.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Reservas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Reservas.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Entidades\\Reservas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Reservas.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Entidades\\Reservas.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:26.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Tarifas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Tarifas.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Entidades\\Tarifas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Tarifas.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Entidades\\Tarifas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:29.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Vehiculos.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Vehiculos.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Entidades\\Vehiculos.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Entidades\\Vehiculos.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Entidades\\Vehiculos.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:33.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MetodosPagos.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\MetodosPagos.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\MetodosPagos.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\MetodosPagos.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\MetodosPagos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:05.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Marcas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\Marcas.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\Marcas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\Marcas.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\Marcas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:59:01.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EstadosVehiculos.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\EstadosVehiculos.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\EstadosVehiculos.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\EstadosVehiculos.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\EstadosVehiculos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:58:57.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EstadosReservas.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\EstadosReservas.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\EstadosReservas.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\EstadosReservas.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\EstadosReservas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:58:49.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ColoresVehiculos.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\ColoresVehiculos.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\ColoresVehiculos.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\ColoresVehiculos.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\ColoresVehiculos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:58:48.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Categorias.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\Categorias.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Catalogo\\Categorias.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\Dominio\\Catalogo\\Categorias.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Catalogo\\Categorias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T05:58:45.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Presentacion_csn.csproj",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_csn\\Presentacion_csn.csproj",
+              "RelativeDocumentMoniker": "Presentacion_csn\\Presentacion_csn.csproj",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_csn\\Presentacion_csn.csproj",
+              "RelativeToolTip": "Presentacion_csn\\Presentacion_csn.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-02T04:38:59.788Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,91 @@
+﻿using AplicacionAlquiler.Dominio.Entidades;
+using AplicacionAlquiler.implementaciones;
+using AplicacionAlquiler.interfaces;
+using AplicacionAlquiler.nucleo;
+using Microsoft.EntityFrameworkCore;
+
+namespace presentacion_mst
+{
+    [TestClass]
+    public class VehiculosPruebas
+    {
+        private IConexion conexion;
+        private Vehiculos? entidad = null;
+
+        public VehiculosPruebas()
+        {
+            this.conexion = new Conexion();
+            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
+        }
+
+        [TestMethod]
+        public void Execute()
+        {
+            Insertar();
+            Consultar();
+            Actualizar();
+            Borrar();
+        }
+
+        public void Insertar()
+        {
+            // Todo esto ya existe (lo inserta el script SQL)
+            var propietario = this.conexion.Usuarios!.First(x => x.NombreUsuario == "carlosgomez");
+            var tipo = this.conexion.TiposVehiculos!.First(x => x.Nombre == "Carro");
+            var estado = this.conexion.EstadosVehiculos!.First(x => x.Nombre == "Disponible");
+            var marca = this.conexion.Marcas!.First(x => x.Nombre == "Kia" && x.TipoVehiculoId == tipo.Id);
+            var color = this.conexion.ColoresVehiculos!.First(x => x.Nombre == "Gris");
+            var transmision = this.conexion.SistemasTransmisiones!.First(x => x.Nombre == "Manual" && x.TipoVehiculo == tipo.Id);
+            var categoria = this.conexion.Categorias!.First(x => x.Nombre == "Hatchback" && x.TipoVehiculo == tipo.Id);
+            var combustible = this.conexion.TiposCombustibles!.First(x => x.Nombre == "Gasolina" && x.TipoVehiculo == tipo.Id);
+
+            this.entidad = new Vehiculos()
+            {
+                Placa = "T" + new Random().Next(10000, 99999),   // 6 caracteres, la placa es UNIQUE
+                Propietario = propietario.Id,
+                EstadoVehiculo = estado.Id,
+                TipoVehiculo = tipo.Id,
+                Marca = marca.Id,
+                ColorVehiculo = color.Id,
+                SistemaTransmision = transmision.Id,
+                Categoria = categoria.Id,
+                TipoCombustible = combustible.Id,
+                Modelo = 2021,
+                FechaRegistro = DateTime.Now
+            };
+            this.conexion.Vehiculos!.Add(this.entidad!);
+            this.conexion.SaveChanges();
+        }
+
+        public void Consultar()
+        {
+            var lista = this.conexion.Vehiculos!
+                .Include(x => x._Propietario)
+                .Include(x => x._ColorVehiculo)
+                .Include(x => x._EstadoVehiculo)
+                .Include(x => x._TipoVehiculo)
+                .Include(x => x._Marca)
+                .Include(x => x._SistemaTransmision)
+                .Include(x => x._Categoria)
+                .Include(x => x._TipoCombustible)
+                .ToList();
+            if (!lista.Any(x => x.Id == this.entidad!.Id))
+                throw new Exception("No se encontro el registro insertado");
+        }
+
+        private void Actualizar()
+        {
+            this.entidad!.Modelo = 2025;
+
+            var entry = this.conexion!.Entry<Vehiculos>(this.entidad);
+            entry.State = EntityState.Modified;
+            this.conexion!.SaveChanges();
+        }
+
+        private void Borrar()
+        {
+            this.conexion.Vehiculos!.Remove(this.entidad!);
+            this.conexion.SaveChanges();
+        }
+    }
+}
