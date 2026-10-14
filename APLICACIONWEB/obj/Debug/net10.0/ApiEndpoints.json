@@ -1,0 +1,512 @@
+[
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.PersonasController",
+    "Method": "Actualizar",
+    "RelativePath": "Personas/Actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Personas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Personas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.PersonasController",
+    "Method": "Borrar",
+    "RelativePath": "Personas/Borrar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Personas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Personas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.PersonasController",
+    "Method": "Consultar",
+    "RelativePath": "Personas/Consultar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Personas, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.PersonasController",
+    "Method": "Insertar",
+    "RelativePath": "Personas/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Personas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Personas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.RegistroAuditoriaController",
+    "Method": "Consultar",
+    "RelativePath": "RegistroAuditoria/Consultar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Servicio.RegistroAuditoria, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ReservasController",
+    "Method": "Actualizar",
+    "RelativePath": "Reservas/Actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Reservas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Reservas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ReservasController",
+    "Method": "Borrar",
+    "RelativePath": "Reservas/Borrar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Reservas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Reservas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ReservasController",
+    "Method": "Consultar",
+    "RelativePath": "Reservas/Consultar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Reservas, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ReservasController",
+    "Method": "Insertar",
+    "RelativePath": "Reservas/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Reservas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Reservas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TarifasController",
+    "Method": "Actualizar",
+    "RelativePath": "Tarifas/Actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Tarifas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Tarifas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TarifasController",
+    "Method": "Borrar",
+    "RelativePath": "Tarifas/Borrar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Tarifas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Tarifas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TarifasController",
+    "Method": "Consultar",
+    "RelativePath": "Tarifas/Consultar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Tarifas, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TarifasController",
+    "Method": "Insertar",
+    "RelativePath": "Tarifas/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Tarifas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Tarifas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
+    "Method": "Actualizar",
+    "RelativePath": "Usuarios/Actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
+    "Method": "Borrar",
+    "RelativePath": "Usuarios/Borrar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
+    "Method": "Consultar",
+    "RelativePath": "Usuarios/Consultar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Usuarios, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
+    "Method": "Insertar",
+    "RelativePath": "Usuarios/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
+    "Method": "Actualizar",
+    "RelativePath": "Vehiculos/Actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Vehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Vehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
+    "Method": "Borrar",
+    "RelativePath": "Vehiculos/Borrar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Vehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Vehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
+    "Method": "Consultar",
+    "RelativePath": "Vehiculos/Consultar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Vehiculos, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
+    "Method": "Insertar",
+    "RelativePath": "Vehiculos/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Vehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Vehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

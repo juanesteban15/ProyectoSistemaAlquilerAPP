@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace Presentacion_mst.Entidades
+namespace Presentacion_MST.Entidades
 {
     [TestClass]
     public class VehiculosPruebas
@@ -15,7 +14,6 @@ namespace Presentacion_mst.Entidades
         public VehiculosPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]
@@ -33,14 +31,14 @@ namespace Presentacion_mst.Entidades
             this.entidad = new Vehiculos()
             {
                 Placa = "SPH589", 
-                Propietario = 1,
-                EstadoVehiculo = 1,
+                Propietario = 4,
+                EstadoVehiculo = 2,
                 TipoVehiculo = 2,
-                Marca = 1,
-                ColorVehiculo = 1,
-                SistemaTransmision =1,
-                Categoria = 1,
-                TipoCombustible =1,
+                Marca = 2,
+                ColorVehiculo = 2,
+                SistemaTransmision =2,
+                Categoria = 5,
+                TipoCombustible =3,
                 Modelo = 2021,
                 FechaRegistro= DateTime.Now
             };

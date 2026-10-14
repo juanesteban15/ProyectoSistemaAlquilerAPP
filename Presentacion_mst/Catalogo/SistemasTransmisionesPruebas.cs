@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Catalogo;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace presentacion_mst
+namespace Presentacion_MST.Catalogo
 {
     [TestClass]
     public class SistemasTransmisionesPruebas
@@ -15,7 +14,6 @@ namespace presentacion_mst
         public SistemasTransmisionesPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]
@@ -33,7 +31,7 @@ namespace presentacion_mst
             this.entidad = new SistemasTransmisiones()
             {
                 Nombre = "SistemasTransmisiones_Test",
-                TipoVehiculo = 1
+                TipoVehiculo = 2
             };
             this.conexion.SistemasTransmisiones!.Add(this.entidad!);
             this.conexion.SaveChanges();

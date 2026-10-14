@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace Presentacion_mst.Entidades
+namespace Presentacion_MST.Entidades
 {
     [TestClass]
     public class TarifasPruebas
@@ -15,7 +14,6 @@ namespace Presentacion_mst.Entidades
         public TarifasPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]
@@ -34,7 +32,7 @@ namespace Presentacion_mst.Entidades
 
             this.entidad = new Tarifas()
             {
-                Vehiculo = 1,
+                Vehiculo = 4,
                 PrecioPorDia = 200000m,
                 FechaInicio = DateTime.Now,
                 Activa = true    // inactiva para no mezclarse con la tarifa real del vehiculo

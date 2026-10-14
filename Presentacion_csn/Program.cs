@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 try
 {
     IConexion conexion = new Conexion();
-    conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
 
     //--ENTIDADES--//
 

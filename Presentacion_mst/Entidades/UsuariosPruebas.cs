@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace Presentacion_mst.Entidades
+namespace Presentacion_MST.Entidades
 {
     [TestClass]
     public class UsuariosPruebas
@@ -15,7 +14,6 @@ namespace Presentacion_mst.Entidades
         public UsuariosPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]
@@ -31,11 +29,11 @@ namespace Presentacion_mst.Entidades
         {
             this.entidad = new Usuarios()
             {
-                Persona =1,
+                Persona =3,
                 NombreUsuario = "usuario_test",
                 Contrasena = "clave123",
                 Rol = "Cliente",
-                Estadousuario = 1,
+                Estadousuario = 2,
             };
             this.conexion.Usuarios!.Add(this.entidad!);
             this.conexion.SaveChanges();

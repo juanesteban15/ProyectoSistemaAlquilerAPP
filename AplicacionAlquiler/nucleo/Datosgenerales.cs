@@ -2,9 +2,9 @@
 {
     public class Datosgenerales
     {
-        public static string ObtenerStringConexion()
+        public static string StringConexion()
         {
-            return "server=(localdb)\\MSSQLLocalDB;database=proyecto_db;Integrated Security=True;TrustServerCertificate=true;";
+            return "server=(localdb)\\MSSQLLocalDB;database=proyectoAlquilerMigration_db;Integrated Security=True;TrustServerCertificate=true;";
         }
     }
 }

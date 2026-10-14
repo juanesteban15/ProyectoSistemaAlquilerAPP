@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace Presentacion_mst.Entidades
+namespace Presentacion_MST.Entidades
 {
     [TestClass]
     public class ReservasPruebas
@@ -15,7 +14,6 @@ namespace Presentacion_mst.Entidades
         public ReservasPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]
@@ -32,13 +30,13 @@ namespace Presentacion_mst.Entidades
 
             this.entidad = new Reservas()
             {
-                Vehiculo = 1,
-                Cliente = 2,
-                EstadoReserva = 1,
+                Vehiculo = 4,
+                Cliente = 4,
+                EstadoReserva = 2,
                 FechaInicio = DateTime.Now,
                 FechaFin = DateTime.Now.AddDays(2),
-                MetodoPago = 1,
-                Tarifa = 1,
+                MetodoPago = 2,
+                Tarifa = 2,
                 PrecioTotal = 300000m,
                 Observaciones = "Reserva de prueba",
                 FechaCreacion = DateTime.Now

@@ -1,5 +1,6 @@
-﻿using AplicacionAlquiler.Dominio.Entidades;
-using AplicacionAlquiler.Dominio.Catalogo;
+﻿using AplicacionAlquiler.Dominio.Catalogo;
+using AplicacionAlquiler.Dominio.Entidades;
+using AplicacionAlquiler.Servicio;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
@@ -7,11 +8,8 @@ namespace AplicacionAlquiler.interfaces
 {
     public interface IConexion
     {
-        string? StringConexion { get; set; }
 
-
-        //-------Entidades------
-
+        public DbSet<RegistroAuditoria>? RegistroAuditoria { get; set; }
         public DbSet<Personas>? Personas { get; set; }
         public DbSet<Reservas>? Reservas { get; set; }
         public DbSet<Tarifas>? Tarifas { get; set; }

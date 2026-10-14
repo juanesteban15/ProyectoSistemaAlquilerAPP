@@ -1,22 +1,62 @@
-﻿using AplicacionAlquiler.Dominio.Entidades;
-using AplicacionAlquiler.Dominio.Catalogo;
+﻿using AplicacionAlquiler.Dominio.Catalogo;
+using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.interfaces;
+using AplicacionAlquiler.nucleo;
+using AplicacionAlquiler.Servicio;
 using Microsoft.EntityFrameworkCore;
 
 namespace AplicacionAlquiler.implementaciones
 {
     public class Conexion : DbContext, IConexion
     {
-        public string? StringConexion { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(this.StringConexion!, p => { });
+            optionsBuilder.UseSqlServer(Datosgenerales.StringConexion()!, p => { });
             optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
         }
 
 
-        //-------Entidades------
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Reservas>()
+                .HasOne(r => r._Vehiculo)
+                .WithMany(v => v.Reservas)
+                .HasForeignKey(r => r.Vehiculo)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Reservas>()
+                .HasOne(r => r._Cliente)
+                .WithMany(u => u.Reservas)
+                .HasForeignKey(r => r.Cliente)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Reservas>()
+                .HasOne(r => r._EstadoReserva)
+                .WithMany(e => e.Reservas)
+                .HasForeignKey(r => r.EstadoReserva)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Reservas>()
+                .HasOne(r => r._MetodoPago)
+                .WithMany(m => m.Reservas)
+                .HasForeignKey(r => r.MetodoPago)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Reservas>()
+                .HasOne(r => r._Tarifa)
+                .WithMany(t => t.Reservas)
+                .HasForeignKey(r => r.Tarifa)
+                .OnDelete(DeleteBehavior.NoAction);
+        }
+
+
+
+
+
+        public DbSet<RegistroAuditoria>? RegistroAuditoria { get; set; }
 
         public DbSet<Personas>? Personas { get; set; }
         public DbSet<Reservas>? Reservas { get; set; }
@@ -25,7 +65,6 @@ namespace AplicacionAlquiler.implementaciones
         public DbSet<Vehiculos>? Vehiculos { get; set; }
 
 
-        //-----Catalogo----------//
         public DbSet<Categorias>? Categorias { get; set; }
         public DbSet<ColoresVehiculos>? ColoresVehiculos { get; set; }
         public DbSet<EstadosReservas>? EstadosReservas { get; set; }

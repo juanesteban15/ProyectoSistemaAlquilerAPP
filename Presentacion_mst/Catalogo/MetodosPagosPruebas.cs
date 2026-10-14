@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Catalogo;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace Presentacion_mst.Catalogo
+namespace Presentacion_MST.Catalogo
 {
     [TestClass]
     public class MetodosPagosPruebas
@@ -15,7 +14,6 @@ namespace Presentacion_mst.Catalogo
         public MetodosPagosPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]

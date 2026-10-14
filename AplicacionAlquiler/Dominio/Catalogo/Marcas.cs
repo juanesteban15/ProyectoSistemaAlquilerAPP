@@ -6,11 +6,11 @@ namespace AplicacionAlquiler.Dominio.Catalogo
 {
     public class Marcas
     {
-        public int Id { get;  set; }
-        public string Nombre { get;  set; }
-        public int TipoVehiculoId { get;  set; }
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public int TipoVehiculoId { get; set; }
 
-        [ForeignKey("TipoVehiculoId")] public TiposVehiculos TipoVehiculo { get;  set; }
+        [ForeignKey("TipoVehiculoId")] public TiposVehiculos TipoVehiculo { get; set; }
         public List<Vehiculos>? Vehiculos { get; set; }
 
 

@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AplicacionAlquiler\AplicacionAlquiler.csproj" />
+    <ProjectReference Include="..\Presentacion_MST\Presentacion_MST.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace Presentacion_mst.Entidades
+namespace Presentacion_MST.Entidades
 {
     [TestClass]
     public class PersonasPruebas
@@ -15,7 +14,6 @@ namespace Presentacion_mst.Entidades
         public PersonasPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]

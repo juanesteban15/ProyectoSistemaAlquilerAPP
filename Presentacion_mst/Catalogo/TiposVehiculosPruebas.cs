@@ -4,7 +4,7 @@ using AplicacionAlquiler.interfaces;
 using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace presentacion_mst
+namespace Presentacion_MST.Catalogo
 {
     [TestClass]
     public class TiposVehiculosPruebas
@@ -15,7 +15,6 @@ namespace presentacion_mst
         public TiposVehiculosPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]

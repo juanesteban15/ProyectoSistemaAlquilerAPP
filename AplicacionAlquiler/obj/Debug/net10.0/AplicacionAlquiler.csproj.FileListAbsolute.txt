@@ -11,3 +11,5 @@ C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.pdb
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\AplicacionAlquiler\obj\Debug\net10.0\ref\AplicacionAlquiler.dll
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.sourcelink.json
+C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\AplicacionAlquiler\bin\Debug\net10.0\AplicacionAlquiler.runtimeconfig.json
+C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.genruntimeconfig.cache

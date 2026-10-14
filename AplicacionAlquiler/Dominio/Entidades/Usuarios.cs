@@ -12,7 +12,12 @@ namespace AplicacionAlquiler.Dominio.Entidades
         public string? Contrasena { get; set; }
         public string? Rol { get; set; }
         public int? Estadousuario { get; set; }
+        public DateTime? FechaEliminacion { get; set; } 
+
+
         public DateTime? FechaCreacion { get; set; }
+
+
 
 
         //-------FOREIGN KEY---------//

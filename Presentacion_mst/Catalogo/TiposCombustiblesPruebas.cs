@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Catalogo;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace presentacion_mst
+namespace Presentacion_MST.Catalogo
 {
     [TestClass]
     public class TiposCombustiblesPruebas
@@ -15,7 +14,6 @@ namespace presentacion_mst
         public TiposCombustiblesPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]

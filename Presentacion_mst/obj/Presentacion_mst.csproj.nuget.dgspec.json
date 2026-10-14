@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Presentacion_mst.csproj": {}
+    "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_MST\\Presentacion_MST.csproj": {}
   },
   "projects": {
     "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\AplicacionAlquiler.csproj": {
@@ -54,7 +54,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[10.0.12, )"
+              "version": "[10.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.13, )"
             }
           },
           "imports": [
@@ -73,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -351,14 +357,14 @@
         }
       }
     },
-    "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Presentacion_mst.csproj": {
+    "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_MST\\Presentacion_MST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Presentacion_mst.csproj",
-        "projectName": "Presentacion_mst",
-        "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\Presentacion_mst.csproj",
+        "projectUniqueName": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_MST\\Presentacion_MST.csproj",
+        "projectName": "Presentacion_MST",
+        "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_MST\\Presentacion_MST.csproj",
         "packagesPath": "C:\\Users\\lenov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_mst\\obj\\",
+        "outputPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_MST\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -424,7 +430,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

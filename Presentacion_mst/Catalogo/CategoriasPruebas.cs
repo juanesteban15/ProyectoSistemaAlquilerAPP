@@ -1,10 +1,9 @@
 using AplicacionAlquiler.Dominio.Catalogo;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
-using AplicacionAlquiler.nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace Presentacion_mst.Catalogo
+namespace Presentacion_MST.Catalogo
 {
     [TestClass]
     public class CategoriasPruebas
@@ -15,7 +14,6 @@ namespace Presentacion_mst.Catalogo
         public CategoriasPruebas()
         {
             this.conexion = new Conexion();
-            this.conexion.StringConexion = Datosgenerales.ObtenerStringConexion();
         }
 
         [TestMethod]
@@ -33,7 +31,7 @@ namespace Presentacion_mst.Catalogo
             this.entidad = new Categorias()
             {
                 Nombre = "Categorias_Test",
-                TipoVehiculo = 1
+                TipoVehiculo = 2
             };
             this.conexion.Categorias!.Add(this.entidad!);
             this.conexion.SaveChanges();
