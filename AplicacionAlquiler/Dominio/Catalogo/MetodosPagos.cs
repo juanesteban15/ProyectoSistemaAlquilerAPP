@@ -1,4 +1,5 @@
 ﻿using AplicacionAlquiler.Dominio.Entidades;
+using System.Text.Json.Serialization;
 
 namespace AplicacionAlquiler.Dominio.Catalogo
 {
@@ -6,6 +7,6 @@ namespace AplicacionAlquiler.Dominio.Catalogo
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public List<Reservas>? Reservas { get; set; }
+        [JsonIgnore] public List<Reservas>? Reservas { get; set; }
     }
 }

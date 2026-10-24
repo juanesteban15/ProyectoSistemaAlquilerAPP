@@ -317,7 +317,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
     "Method": "Actualizar",
     "RelativePath": "Usuarios/Actualizar",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -369,7 +369,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
     "Method": "Consultar",
     "RelativePath": "Usuarios/Consultar",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],

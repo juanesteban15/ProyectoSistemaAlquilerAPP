@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "APLICACIONWEB\\APLICACIONWEB.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Front_Alquiler\\Front_Alquiler.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

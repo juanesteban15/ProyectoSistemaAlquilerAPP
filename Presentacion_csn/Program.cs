@@ -8,9 +8,7 @@ try
 {
     IConexion conexion = new Conexion();
 
-    //--ENTIDADES--//
 
-    //cada lista debe llamarse diferente//
     var lista_Usuarios = conexion.Usuarios!.ToList();
     var lista_Vehiculos = conexion.Vehiculos!
     .Include(x => x._Propietario)

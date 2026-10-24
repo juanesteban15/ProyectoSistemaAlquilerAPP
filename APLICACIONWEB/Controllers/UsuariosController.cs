@@ -15,13 +15,13 @@ namespace APLICACIONWEB.Controllers
             this.aplicacion = aplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Usuarios> Consultar() => aplicacion.Consultar();
 
         [HttpPost]
         public Usuarios Insertar([FromBody] Usuarios entidad) => aplicacion.Insertar(entidad);
 
-        [HttpPut]
+        [HttpPost]
         public Usuarios Actualizar([FromBody] Usuarios entidad) => aplicacion.Actualizar(entidad);
 
         [HttpDelete]

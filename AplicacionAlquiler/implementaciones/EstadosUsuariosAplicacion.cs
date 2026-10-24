@@ -18,7 +18,12 @@ namespace AplicacionAlquiler.implementaciones
 
         public EstadosUsuarios Actualizar(EstadosUsuarios entidad)
         {
-            // Hacer calculo o operaciones
+            // Verifica que el estado exista antes de actualizarlo.
+            if (!conexion.EstadosUsuarios!.Any(x => x.Id == entidad.Id))
+                throw new InvalidOperationException($"No existe un estado de usuario con el Id {entidad.Id}.");
+            // Evita duplicar el nombre del estado en otro registro.
+            if (conexion.EstadosUsuarios!.Any(x => x.Nombre == entidad.Nombre && x.Id != entidad.Id))
+                throw new InvalidOperationException($"Ya existe el estado de usuario {entidad.Nombre}.");
 
             var entry = this.conexion!.Entry<EstadosUsuarios>(entidad);
             entry.State = EntityState.Modified;
@@ -29,7 +34,12 @@ namespace AplicacionAlquiler.implementaciones
 
         public EstadosUsuarios Borrar(EstadosUsuarios entidad)
         {
-            // Hacer calculo o operaciones
+            // Verifica que el estado exista antes de eliminarlo.
+            if (!conexion.EstadosUsuarios!.Any(x => x.Id == entidad.Id))
+                throw new InvalidOperationException($"No existe un estado de usuario con el Id {entidad.Id}.");
+            // No permite eliminarlo si hay usuarios que lo utilizan.
+            if (conexion.Usuarios!.Any(x => x.Estadousuario == entidad.Id))
+                throw new InvalidOperationException($"No se puede eliminar el estado con Id {entidad.Id} porque tiene usuarios asociados.");
 
             this.conexion.EstadosUsuarios!.Remove(entidad!);
             this.conexion.SaveChanges();
@@ -47,6 +57,10 @@ namespace AplicacionAlquiler.implementaciones
 
         public EstadosUsuarios Insertar(EstadosUsuarios entidad)
         {
+            // Evita registrar dos veces el mismo estado de usuario.
+            if (conexion.EstadosUsuarios!.Any(x => x.Nombre == entidad.Nombre))
+                throw new InvalidOperationException($"Ya existe el estado de usuario {entidad.Nombre}.");
+
             this.conexion.EstadosUsuarios!.Add(entidad);
             this.conexion.SaveChanges();
             auditoria.Insertar(new RegistroAuditoria { FechaUtc = DateTime.UtcNow, Movimiento = "INSERT", Detalle = $"Se insertó estados de usuarios con Id {entidad.Id}" });

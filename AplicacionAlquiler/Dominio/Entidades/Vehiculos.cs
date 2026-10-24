@@ -1,5 +1,6 @@
 ﻿using AplicacionAlquiler.Dominio.Catalogo;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace AplicacionAlquiler.Dominio.Entidades
 {
@@ -35,8 +36,8 @@ namespace AplicacionAlquiler.Dominio.Entidades
         [ForeignKey("TipoCombustible")] public TiposCombustibles _TipoCombustible { get; set; }
 
 
-        public List<Reservas>? Reservas { get; set; }
-        public List<Tarifas>? Tarifas { get; set; }
+        [JsonIgnore]  public List<Reservas>? Reservas { get; set; }
+        [JsonIgnore]  public List<Tarifas>? Tarifas { get; set; }
 
     }
 }

@@ -1,4 +1,6 @@
 
+using System.Text.Json.Serialization;
+
 namespace AplicacionAlquiler.Dominio.Entidades
 {
     public class Personas
@@ -17,7 +19,7 @@ namespace AplicacionAlquiler.Dominio.Entidades
         public string? Telefono { get; set; }
 
 
-        public List<Usuarios>? Usuarios { get; set; }
+        [JsonIgnore] public List<Usuarios>? Usuarios { get; set; }
 
     }
 }

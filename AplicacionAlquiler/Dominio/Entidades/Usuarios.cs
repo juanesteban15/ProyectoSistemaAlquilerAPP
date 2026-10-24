@@ -1,5 +1,6 @@
 ﻿using AplicacionAlquiler.Dominio.Catalogo;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 
 namespace AplicacionAlquiler.Dominio.Entidades
@@ -25,8 +26,8 @@ namespace AplicacionAlquiler.Dominio.Entidades
 
         [ForeignKey("Estadousuario")] public EstadosUsuarios? _EstadoUsuario { get; set; }
 
-        public List<Vehiculos>? Vehiculos { get; set; }
-        public List<Reservas>? Reservas { get; set; }
+        [JsonIgnore] public List<Vehiculos>? Vehiculos { get; set; }
+        [JsonIgnore]  public List<Reservas>? Reservas { get; set; }
 
 
 

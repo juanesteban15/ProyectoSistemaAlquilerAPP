@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace AplicacionAlquiler.Dominio.Entidades
 {
@@ -13,7 +14,7 @@ namespace AplicacionAlquiler.Dominio.Entidades
 
         [ForeignKey("Vehiculo")] public Vehiculos _Vehiculo { get; set; }
 
-        public List<Reservas>? Reservas { get; set; }
+        [JsonIgnore] public List<Reservas>? Reservas { get; set; }
 
 
 

@@ -18,7 +18,13 @@ namespace AplicacionAlquiler.implementaciones
 
         public Categorias Actualizar(Categorias entidad)
         {
-            // Hacer calculo o operaciones
+            // Verifica que la categoría exista antes de actualizarla.
+            if (!conexion.Categorias!.Any(x => x.Id == entidad.Id))
+                throw new InvalidOperationException($"No existe una categoría con el Id {entidad.Id}.");
+
+            // Comprueba que el tipo de vehículo asociado exista.
+            if (!conexion.TiposVehiculos!.Any(x => x.Id == entidad.TipoVehiculo))
+                throw new InvalidOperationException($"No existe un tipo de vehículo con el Id {entidad.TipoVehiculo}.");
 
             var entry = this.conexion!.Entry<Categorias>(entidad);
             entry.State = EntityState.Modified;
@@ -29,7 +35,12 @@ namespace AplicacionAlquiler.implementaciones
 
         public Categorias Borrar(Categorias entidad)
         {
-            // Hacer calculo o operaciones
+            // Verifica que la categoría exista antes de eliminarla.
+            if (!conexion.Categorias!.Any(x => x.Id == entidad.Id))
+                throw new InvalidOperationException($"No existe una categoría con el Id {entidad.Id}.");
+            // No permite eliminarla si hay vehículos que la utilizan.
+            if (conexion.Vehiculos!.Any(x => x.Categoria == entidad.Id))
+                throw new InvalidOperationException($"No se puede eliminar la categoría con Id {entidad.Id} porque tiene vehículos asociados.");
 
             this.conexion.Categorias!.Remove(entidad!);
             this.conexion.SaveChanges();
@@ -48,6 +59,14 @@ namespace AplicacionAlquiler.implementaciones
 
         public Categorias Insertar(Categorias entidad)
         {
+            // Comprueba que el tipo de vehículo asociado exista.
+            if (!conexion.TiposVehiculos!.Any(x => x.Id == entidad.TipoVehiculo))
+                throw new InvalidOperationException($"No existe un tipo de vehículo con el Id {entidad.TipoVehiculo}.");
+
+            // Evita repetir el nombre de categoría para el mismo tipo de vehículo.
+            if (conexion.Categorias!.Any(x => x.Nombre == entidad.Nombre && x.TipoVehiculo == entidad.TipoVehiculo))
+                throw new InvalidOperationException($"Ya existe la categoría {entidad.Nombre} para ese tipo de vehículo.");
+
             this.conexion.Categorias!.Add(entidad);
             this.conexion.SaveChanges();
             auditoria.Insertar(new RegistroAuditoria { FechaUtc = DateTime.UtcNow, Movimiento = "INSERT", Detalle = $"Se insertó categorías con Id {entidad.Id}" });

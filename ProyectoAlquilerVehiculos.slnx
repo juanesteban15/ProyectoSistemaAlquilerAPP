@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="AplicacionAlquiler/AplicacionAlquiler.csproj" />
   <Project Path="APLICACIONWEB/APLICACIONWEB.csproj" Id="b71853ac-36ed-453f-b90d-502ba109ab61" />
+  <Project Path="Front_Alquiler/Front_Alquiler.csproj" Id="0ac4b3fe-63ce-41b5-83fe-45eaff83113e" />
   <Project Path="Presentacion_CSN/Presentacion_CSN.csproj" Id="87c29873-4d9c-4e3a-98be-cbe73b97773b" />
   <Project Path="Presentacion_MST/Presentacion_MST.csproj" Id="d92ed129-f98a-401e-a312-a51d2103fe19" />
 </Solution>

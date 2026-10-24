@@ -1,0 +1,33 @@
+﻿@page
+@model UsuariosModel
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Usuarios</h1>
+
+    <table>
+        <tr>
+            <th>Persona</th>
+            <th>NombreUsuario</th>
+            <th>Contraseña</th>
+            <th>Rol</th>
+            <th>Estado</th>
+        </tr>
+        @if (Model != null && Model.Lista != null)
+        {
+            foreach (var elemento in Model.Lista)
+            {
+                <tr>
+                    <td>@elemento.Persona</td>
+                    <td>@elemento.NombreUsuario</td>
+                    <td>@elemento.Contrasena</td>
+                    <td>@elemento.Rol</td>
+                    <td>@elemento.Estadousuario</td>
+                </tr>
+            }
+        }
+    </table>
+
+</div>

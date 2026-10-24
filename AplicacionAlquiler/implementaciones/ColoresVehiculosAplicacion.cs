@@ -18,7 +18,12 @@ namespace AplicacionAlquiler.implementaciones
 
         public ColoresVehiculos Actualizar(ColoresVehiculos entidad)
         {
-            // Hacer calculo o operaciones
+            // Verifica que el color exista antes de actualizarlo.
+            if (!conexion.ColoresVehiculos!.Any(x => x.Id == entidad.Id))
+                throw new InvalidOperationException($"No existe un color de vehículo con el Id {entidad.Id}.");
+            // Evita asignar a otro registro un nombre de color que ya está en uso.
+            if (conexion.ColoresVehiculos!.Any(x => x.Nombre == entidad.Nombre && x.Id != entidad.Id))
+                throw new InvalidOperationException($"Ya existe el color {entidad.Nombre}.");
 
             var entry = this.conexion!.Entry<ColoresVehiculos>(entidad);
             entry.State = EntityState.Modified;
@@ -29,7 +34,12 @@ namespace AplicacionAlquiler.implementaciones
 
         public ColoresVehiculos Borrar(ColoresVehiculos entidad)
         {
-            // Hacer calculo o operaciones
+            // Verifica que el color exista antes de eliminarlo.
+            if (!conexion.ColoresVehiculos!.Any(x => x.Id == entidad.Id))
+                throw new InvalidOperationException($"No existe un color de vehículo con el Id {entidad.Id}.");
+            // No permite eliminarlo si algún vehículo lo está utilizando.
+            if (conexion.Vehiculos!.Any(x => x.ColorVehiculo == entidad.Id))
+                throw new InvalidOperationException($"No se puede eliminar el color con Id {entidad.Id} porque tiene vehículos asociados.");
 
             this.conexion.ColoresVehiculos!.Remove(entidad!);
             this.conexion.SaveChanges();
@@ -47,6 +57,10 @@ namespace AplicacionAlquiler.implementaciones
 
         public ColoresVehiculos Insertar(ColoresVehiculos entidad)
         {
+            // Evita registrar dos veces el mismo color.
+            if (conexion.ColoresVehiculos!.Any(x => x.Nombre == entidad.Nombre))
+                throw new InvalidOperationException($"Ya existe el color {entidad.Nombre}.");
+
             this.conexion.ColoresVehiculos!.Add(entidad);
             this.conexion.SaveChanges();
             auditoria.Insertar(new RegistroAuditoria { FechaUtc = DateTime.UtcNow, Movimiento = "INSERT", Detalle = $"Se insertó colores de vehículos con Id {entidad.Id}" });
