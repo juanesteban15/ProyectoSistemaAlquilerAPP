@@ -1,0 +1,46 @@
+@page
+@model ReservasModel
+@{
+    ViewData["Title"] = "Reservas";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Reservas</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Vehículo</th>
+                <th>Cliente</th>
+                <th>Estado</th>
+                <th>Fecha inicio</th>
+                <th>Fecha fin</th>
+                <th>Método de pago</th>
+                <th>Tarifa</th>
+                <th>Precio total</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model?.Lista != null)
+            {
+                foreach (var elemento in Model.Lista)
+                {
+                    <tr>
+                        <td>@elemento.Id</td>
+                        <td>@elemento.Vehiculo</td>
+                        <td>@elemento.Cliente</td>
+                        <td>@elemento.EstadoReserva</td>
+                        <td>@elemento.FechaInicio</td>
+                        <td>@elemento.FechaFin</td>
+                        <td>@elemento.MetodoPago</td>
+                        <td>@elemento.Tarifa</td>
+                        <td>@elemento.PrecioTotal</td>
+                        <td>@elemento.Observaciones</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

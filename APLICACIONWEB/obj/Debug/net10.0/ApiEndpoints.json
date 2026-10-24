@@ -121,7 +121,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.ReservasController",
     "Method": "Actualizar",
     "RelativePath": "Reservas/Actualizar",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -147,7 +147,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.ReservasController",
     "Method": "Borrar",
     "RelativePath": "Reservas/Borrar",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -173,7 +173,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.ReservasController",
     "Method": "Consultar",
     "RelativePath": "Reservas/Consultar",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
@@ -415,7 +415,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
     "Method": "Actualizar",
     "RelativePath": "Vehiculos/Actualizar",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -441,7 +441,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
     "Method": "Borrar",
     "RelativePath": "Vehiculos/Borrar",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -467,7 +467,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
     "Method": "Consultar",
     "RelativePath": "Vehiculos/Consultar",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],

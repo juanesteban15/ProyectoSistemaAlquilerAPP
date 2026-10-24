@@ -15,16 +15,16 @@ namespace APLICACIONWEB.Controllers
             this.aplicacion = aplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Vehiculos> Consultar() => aplicacion.Consultar();
 
         [HttpPost]
         public Vehiculos Insertar([FromBody] Vehiculos entidad) => aplicacion.Insertar(entidad);
 
-        [HttpPut]
+        [HttpPost]
         public Vehiculos Actualizar([FromBody] Vehiculos entidad) => aplicacion.Actualizar(entidad);
 
-        [HttpDelete]
+        [HttpPost]
         public Vehiculos Borrar([FromBody] Vehiculos entidad) => aplicacion.Borrar(entidad);
     }
 }

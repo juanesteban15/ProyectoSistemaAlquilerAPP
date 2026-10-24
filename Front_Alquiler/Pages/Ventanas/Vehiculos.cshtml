@@ -1,0 +1,50 @@
+@page
+@model VehiculosModel
+@{
+    ViewData["Title"] = "Vehículos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Vehículos</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Placa</th>
+                <th>Propietario</th>
+                <th>Estado</th>
+                <th>Tipo</th>
+                <th>Marca</th>
+                <th>Color</th>
+                <th>Transmisión</th>
+                <th>Categoría</th>
+                <th>Combustible</th>
+                <th>Modelo</th>
+                <th>Fecha de registro</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model?.Lista != null)
+            {
+                foreach (var elemento in Model.Lista)
+                {
+                    <tr>
+                        <td>@elemento.Id</td>
+                        <td>@elemento.Placa</td>
+                        <td>@elemento.Propietario</td>
+                        <td>@elemento.EstadoVehiculo</td>
+                        <td>@elemento.TipoVehiculo</td>
+                        <td>@elemento.Marca</td>
+                        <td>@elemento.ColorVehiculo</td>
+                        <td>@elemento.SistemaTransmision</td>
+                        <td>@elemento.Categoria</td>
+                        <td>@elemento.TipoCombustible</td>
+                        <td>@elemento.Modelo</td>
+                        <td>@elemento.FechaRegistro</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

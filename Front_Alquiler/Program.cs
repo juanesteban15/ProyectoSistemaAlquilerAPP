@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IComunicaciones, Comunicaciones>();
 builder.Services.AddScoped<IUsuariosPresentacion, UsuariosPresentacion>();
+builder.Services.AddScoped<IReservasPresentacion, ReservasPresentacion>();
+builder.Services.AddScoped<IVehiculosPresentacion, VehiculosPresentacion>();
 
 var app = builder.Build();
 
