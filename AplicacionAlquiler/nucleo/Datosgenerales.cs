@@ -4,7 +4,7 @@
     {
         public static string StringConexion()
         {
-            return "server=(localdb)\\MSSQLLocalDB;database=proyectoAlquilerMigration_db;Integrated Security=True;TrustServerCertificate=true;";
+            return "server=(localdb)\\MSSQLLocalDB;database=proyectoAlquiler_db;Integrated Security=True;TrustServerCertificate=true;";
         }
     }
 }

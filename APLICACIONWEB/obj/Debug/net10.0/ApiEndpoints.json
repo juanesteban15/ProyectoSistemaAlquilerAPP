@@ -412,6 +412,104 @@
     ]
   },
   {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculoFotoController",
+    "Method": "Actualizar",
+    "RelativePath": "VehiculoFoto/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.VehiculoFoto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.VehiculoFoto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculoFotoController",
+    "Method": "Borrar",
+    "RelativePath": "VehiculoFoto/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.VehiculoFoto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.VehiculoFoto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculoFotoController",
+    "Method": "Consultar",
+    "RelativePath": "VehiculoFoto/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.VehiculoFoto, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculoFotoController",
+    "Method": "Insertar",
+    "RelativePath": "VehiculoFoto/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.VehiculoFoto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Entidades.VehiculoFoto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
     "Method": "Actualizar",
     "RelativePath": "Vehiculos/Actualizar",

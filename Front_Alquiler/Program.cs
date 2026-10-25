@@ -11,6 +11,7 @@ builder.Services.AddScoped<IComunicaciones, Comunicaciones>();
 builder.Services.AddScoped<IUsuariosPresentacion, UsuariosPresentacion>();
 builder.Services.AddScoped<IReservasPresentacion, ReservasPresentacion>();
 builder.Services.AddScoped<IVehiculosPresentacion, VehiculosPresentacion>();
+builder.Services.AddScoped<IVehiculoFotoPresentacion, VehiculoFotoPresentacion>();
 
 var app = builder.Build();
 

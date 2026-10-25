@@ -15,6 +15,7 @@ namespace AplicacionAlquiler.interfaces
         public DbSet<Tarifas>? Tarifas { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }
         public DbSet<Vehiculos>? Vehiculos { get; set; }
+        public DbSet<VehiculoFoto>? VehiculoFotos { get; set; }
 
 
         //-----Catalogo----------//

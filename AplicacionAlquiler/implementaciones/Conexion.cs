@@ -63,6 +63,7 @@ namespace AplicacionAlquiler.implementaciones
         public DbSet<Tarifas>? Tarifas { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }
         public DbSet<Vehiculos>? Vehiculos { get; set; }
+        public DbSet<VehiculoFoto>? VehiculoFotos { get; set; }
 
 
         public DbSet<Categorias>? Categorias { get; set; }

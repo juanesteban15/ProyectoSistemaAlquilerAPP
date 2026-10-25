@@ -12,6 +12,8 @@ namespace AplicacionAlquiler.Dominio.Entidades
         public string? NombreUsuario { get; set; }
         public string? Contrasena { get; set; }
         public string? Rol { get; set; }
+        public string? FotoPerfilRuta { get; private set; }
+
         public int? Estadousuario { get; set; }
         public DateTime? FechaEliminacion { get; set; } 
 

@@ -35,7 +35,7 @@ namespace AplicacionAlquiler.Dominio.Entidades
         [ForeignKey("Categoria")] public Categorias _Categoria { get; set; }
         [ForeignKey("TipoCombustible")] public TiposCombustibles _TipoCombustible { get; set; }
 
-
+        [JsonIgnore]  public List<VehiculoFoto> VehiculoFoto { get; set; }
         [JsonIgnore]  public List<Reservas>? Reservas { get; set; }
         [JsonIgnore]  public List<Tarifas>? Tarifas { get; set; }
 

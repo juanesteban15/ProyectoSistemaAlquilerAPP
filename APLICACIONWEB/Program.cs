@@ -13,6 +13,7 @@ builder.Services.AddScoped<IPersonasAplicacion, PersonasAplicacion>();
 builder.Services.AddScoped<IRegistroAuditoriaAplicacion, RegistroAuditoriasAplicacion>();
 builder.Services.AddScoped<IReservasAplicacion, ReservasAplicacion>();
 builder.Services.AddScoped<IVehiculosAplicacion, VehiculosAplicacion>();
+builder.Services.AddScoped<IVehiculoFotoAplicacion, VehiculoFotoAplicacion>();
 builder.Services.AddScoped<IUsuariosAplicacion, UsuariosAplicacion>();
 builder.Services.AddScoped<ITarifasAplicacion, TarifasAplicacion>();
 builder.Services.AddScoped<ICategoriasAplicacion, CategoriasAplicacion>();
