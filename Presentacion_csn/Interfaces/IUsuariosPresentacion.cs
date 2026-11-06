@@ -1,4 +1,5 @@
-﻿using AplicacionAlquiler.Dominio.Entidades;
+﻿using AplicacionAlquiler.Dominio.DTOs;
+using AplicacionAlquiler.Dominio.Entidades;
 
 namespace AplicacionAlquiler.interfaces
 {
@@ -9,5 +10,7 @@ namespace AplicacionAlquiler.interfaces
         List<Usuarios> Consultar();
         List<Usuarios> Buscar(Usuarios entidad);
         Usuarios Borrar(Usuarios entidad);
+        LoginResponse IniciarSesion(LoginRequest solicitud);
+        bool Registrar(RegistroRequest solicitud);  
     }
 }

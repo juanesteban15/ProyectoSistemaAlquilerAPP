@@ -26,16 +26,16 @@ namespace AplicacionAlquiler.Dominio.Entidades
 
 
         //foreign key
-        [ForeignKey("TipoVehiculo")] public TiposVehiculos _TipoVehiculo { get; set; }
-        [ForeignKey("ColorVehiculo")] public ColoresVehiculos _ColorVehiculo { get; set; }
-        [ForeignKey("EstadoVehiculo")] public EstadosVehiculos _EstadoVehiculo { get; set; }
-        [ForeignKey("Marca")] public Marcas _Marca { get; set; }
-        [ForeignKey("Propietario")] public Usuarios _Propietario { get; set; }
-        [ForeignKey("SistemaTransmision")] public SistemasTransmisiones _SistemaTransmision { get; set; }
-        [ForeignKey("Categoria")] public Categorias _Categoria { get; set; }
-        [ForeignKey("TipoCombustible")] public TiposCombustibles _TipoCombustible { get; set; }
+        [ForeignKey("TipoVehiculo")] public TiposVehiculos? _TipoVehiculo { get; set; }
+        [ForeignKey("ColorVehiculo")] public ColoresVehiculos? _ColorVehiculo { get; set; }
+        [ForeignKey("EstadoVehiculo")] public EstadosVehiculos? _EstadoVehiculo { get; set; }
+        [ForeignKey("Marca")] public Marcas? _Marca { get; set; }
+        [ForeignKey("Propietario")] public Usuarios? _Propietario { get; set; }
+        [ForeignKey("SistemaTransmision")] public SistemasTransmisiones? _SistemaTransmision { get; set; }
+        [ForeignKey("Categoria")] public Categorias? _Categoria { get; set; }
+        [ForeignKey("TipoCombustible")] public TiposCombustibles? _TipoCombustible { get; set; }
 
-        [JsonIgnore]  public List<VehiculoFoto> VehiculoFoto { get; set; }
+          public List<VehiculoFoto>? VehiculoFoto { get; set; }
         [JsonIgnore]  public List<Reservas>? Reservas { get; set; }
         [JsonIgnore]  public List<Tarifas>? Tarifas { get; set; }
 

@@ -10,7 +10,7 @@ namespace AplicacionAlquiler.Dominio.Entidades
         public string? Apellido { get; set; }
         public string? Email { get; set; }
         public string? PaisNacimiento { get; set; }
-        public DateTime FechaNacimiento { get; set; }
+        public DateTime? FechaNacimiento { get; set; }
 
         public string? TipoDocumento { get; set; }
         public string? NumeroDocumento { get; set; }

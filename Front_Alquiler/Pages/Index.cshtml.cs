@@ -1,32 +1,44 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.interfaces;
+using AplicacionAlquiler.nucleo;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Front_Alquiler.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly IVehiculosPresentacion _vehiculosPresentacion;
+        private IVehiculosPresentacion IVehiculosPresentacion;
 
-        public IndexModel(IVehiculosPresentacion vehiculosPresentacion)
+        public IndexModel(IVehiculosPresentacion IVehiculosPresentacion)
         {
-            _vehiculosPresentacion = vehiculosPresentacion;
+            this.IVehiculosPresentacion = IVehiculosPresentacion;
+            this.Filtro = new Vehiculos();
         }
 
-        public List<Vehiculos> Lista { get; private set; } = new();
+        [BindProperty] public List<Vehiculos> Lista { get; set; }
+        [BindProperty] public Vehiculos? Filtro { get; set; }
+        [BindProperty] public Vehiculos? Actual { get; set; }
+        [BindProperty] public bool Formulario { get; set; } = false;
+        [BindProperty] public bool Borrar { get; set; } = false;
 
-        public string? Error { get; private set; }
 
-        public void OnGet()
+        public void OnGet() { OnPostBtRefrescar(); }
+
+        public void OnPostBtRefrescar()
         {
             try
             {
-                Lista = _vehiculosPresentacion.Consultar();
+                var vehiculos = IVehiculosPresentacion.Consultar();
+
+                 Lista = vehiculos
+                .Where(v => v.EstadoVehiculo == 2)
+                .ToList();
+
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 Lista = new List<Vehiculos>();
-                Error = "No se pudieron cargar los vehículos.";
             }
         }
     }

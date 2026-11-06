@@ -19,6 +19,9 @@ namespace APLICACIONWEB.Controllers
         public List<Reservas> Consultar() => aplicacion.Consultar();
 
         [HttpPost]
+        public List<Reservas> Buscar([FromBody] Reservas entidad) => aplicacion.Buscar(entidad);
+
+        [HttpPost]
         public Reservas Insertar([FromBody] Reservas entidad) => aplicacion.Insertar(entidad);
 
         [HttpPost]

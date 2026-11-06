@@ -1,33 +1,119 @@
-﻿@page
+@page
 @model UsuariosModel
 @{
     ViewData["Title"] = "Usuarios";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Usuarios</h1>
+<form method="post">
+    <div class="text-center">
+        <h1 class="display-4">Usuarios</h1>
 
-    <table>
-        <tr>
-            <th>Persona</th>
-            <th>NombreUsuario</th>
-            <th>Contraseña</th>
-            <th>Rol</th>
-            <th>Estado</th>
-        </tr>
-        @if (Model != null && Model.Lista != null)
+        @if (ViewData.ContainsKey("Mensaje"))
         {
-            foreach (var elemento in Model.Lista)
-            {
-                <tr>
-                    <td>@elemento.Persona</td>
-                    <td>@elemento.NombreUsuario</td>
-                    <td>@elemento.Contrasena</td>
-                    <td>@elemento.Rol</td>
-                    <td>@elemento.Estadousuario</td>
-                </tr>
-            }
+            <div class="alert alert-danger">@ViewData["Mensaje"]</div>
         }
-    </table>
 
-</div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-secondary" asp-page-handler="BtRefrescar">Ver usuarios</button>
+            <button type="submit" class="btn btn-secondary" asp-page-handler="BtBuscar">Buscar</button>
+            <button type="submit" class="btn btn-secondary" asp-page-handler="BtNuevo">Nuevo</button>
+            <input asp-for="Filtro!.NombreUsuario" placeholder="Nombre de usuario" />
+        </div>
+
+        @if (Model.Formulario && Model.Actual != null)
+        {
+            <div class="mb-4">
+                <h3>Usuario</h3>
+                <input type="hidden" asp-for="Actual.Id" />
+
+                <label asp-for="Actual.Persona">Id de persona</label>
+                <input asp-for="Actual.Persona" type="number" min="1" />
+                <br />
+
+                <label asp-for="Actual.NombreUsuario">Nombre de usuario</label>
+                <input asp-for="Actual.NombreUsuario" />
+                <br />
+
+                @if (Model.Actual.Id == 0)
+                {
+                    <label asp-for="Actual.Contrasena">Contraseña</label>
+                    <input asp-for="Actual.Contrasena" type="password" autocomplete="new-password" />
+                    <br />
+                }
+                else
+                {
+                    <p>La contraseña actual se conserva; no se muestra en esta ventana.</p>
+                }
+
+                <label asp-for="Actual.Rol">Rol</label>
+                <input asp-for="Actual.Rol" />
+                <br />
+
+                <label asp-for="Actual.Estadousuario">Id del estado de usuario</label>
+                <input asp-for="Actual.Estadousuario" type="number" min="1" />
+                <br />
+
+                <button type="submit" class="btn btn-secondary" asp-page-handler="BtGuardar">Guardar</button>
+                <button type="submit" class="btn btn-secondary" asp-page-handler="BtRefrescar">Cancelar</button>
+            </div>
+        }
+
+        @if (!Model.Formulario)
+        {
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Persona</th>
+                            <th>Nombre de usuario</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Fecha de creación</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Lista != null)
+                        {
+                            foreach (var elemento in Model.Lista)
+                            {
+                                <tr>
+                                    <td>@elemento.Id</td>
+                                    <td>@(elemento._Persona?.Nombre) @(elemento._Persona?.Apellido)</td>
+                                    <td>@elemento.NombreUsuario</td>
+                                    <td>@elemento.Rol</td>
+                                    <td>@elemento.Estadousuario</td>
+                                    <td>@elemento.FechaCreacion</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-secondary btn-sm"
+                                                asp-page-handler="BtEditar" asp-route-data="@elemento.Id">
+                                            Editar
+                                        </button>
+                                        <button type="submit" class="btn btn-danger btn-sm"
+                                                asp-page-handler="BtPregBorrar" asp-route-data="@elemento.Id">
+                                            Borrar
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        @if (Model.Borrar && Model.Actual != null)
+        {
+            <div class="popup">
+                <div class="pp_del_inner">
+                    <h3>Confirmar eliminación</h3>
+                    <p>¿Deseas eliminar el usuario <strong>@Model.Actual.NombreUsuario</strong>?</p>
+                    <input type="hidden" asp-for="Actual.Id" />
+                    <button type="submit" class="btn btn-secondary" asp-page-handler="BtCancelarBorrar">Cancelar</button>
+                    <button type="submit" class="btn btn-danger" asp-page-handler="BtBorrar">Confirmar</button>
+                </div>
+            </div>
+        }
+    </div>
+</form>

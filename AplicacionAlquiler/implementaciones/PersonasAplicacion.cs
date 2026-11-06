@@ -98,6 +98,10 @@ namespace AplicacionAlquiler.implementaciones
             if (!string.IsNullOrWhiteSpace(entidad.Email) && conexion.Personas!.Any(p => p.Email == entidad.Email))
                 throw new InvalidOperationException($"Ya existe una persona con el correo {entidad.Email}.");
 
+
+
+
+
             this.conexion.Personas!.Add(entidad);
             this.conexion.SaveChanges();
             auditoria.Insertar(new RegistroAuditoria

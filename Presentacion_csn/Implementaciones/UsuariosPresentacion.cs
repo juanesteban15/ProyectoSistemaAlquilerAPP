@@ -1,4 +1,5 @@
-﻿using AplicacionAlquiler.Dominio.Entidades;
+﻿using AplicacionAlquiler.Dominio.DTOs;
+using AplicacionAlquiler.Dominio.Entidades;
 using Presentacion_CSN.Interfaces;
 
 namespace AplicacionAlquiler.interfaces
@@ -79,5 +80,30 @@ namespace AplicacionAlquiler.interfaces
                    string.IsNullOrWhiteSpace(entidad.Contrasena) ||
                    string.IsNullOrWhiteSpace(entidad.Rol);
         }
+
+        public LoginResponse IniciarSesion(LoginRequest solicitud)
+        {
+            var task = IComunicaciones.Ejecutar<LoginResponse>(
+                "Usuarios/IniciarSesion",
+                solicitud);
+
+            task.Wait();
+            return task.Result;
+        }
+
+
+        public bool Registrar(RegistroRequest solicitud)
+        {
+            var task = IComunicaciones.Ejecutar<bool>(
+                "Usuarios/Registrar",
+                solicitud);
+
+            task.Wait();
+            return task.Result;
+        }
+
+
+
+
     }
 }

@@ -6,6 +6,8 @@ namespace AplicacionAlquiler.interfaces
     {
         Vehiculos Insertar(Vehiculos entidad);
         List<Vehiculos> Consultar();
+        List<Vehiculos> Buscar(Vehiculos entidad);
+
         Vehiculos Actualizar(Vehiculos entidad);
         Vehiculos Borrar(Vehiculos entidad);
     }

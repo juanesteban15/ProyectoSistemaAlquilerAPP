@@ -3,6 +3,7 @@ using Presentacion_CSN.Implementaciones;
 using Presentacion_CSN.Interfaces;
 using AplicacionAlquiler.implementaciones;
 using AplicacionAlquiler.interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,13 @@ builder.Services.AddScoped<IUsuariosPresentacion, UsuariosPresentacion>();
 builder.Services.AddScoped<IReservasPresentacion, ReservasPresentacion>();
 builder.Services.AddScoped<IVehiculosPresentacion, VehiculosPresentacion>();
 builder.Services.AddScoped<IVehiculoFotoPresentacion, VehiculoFotoPresentacion>();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+    {
+        options.LoginPath = "/Cuenta/IniciarSesion";
+        options.AccessDeniedPath = "/Cuenta/IniciarSesion";
+    });
+
 
 var app = builder.Build();
 
@@ -23,6 +31,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapStaticAssets();
 app.MapRazorPages()

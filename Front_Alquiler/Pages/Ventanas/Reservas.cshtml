@@ -4,43 +4,136 @@
     ViewData["Title"] = "Reservas";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Reservas</h1>
+<form method="post">
+    <div class="text-center">
+        <h1 class="display-4">Reservas</h1>
 
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Vehículo</th>
-                <th>Cliente</th>
-                <th>Estado</th>
-                <th>Fecha inicio</th>
-                <th>Fecha fin</th>
-                <th>Método de pago</th>
-                <th>Tarifa</th>
-                <th>Precio total</th>
-                <th>Observaciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model?.Lista != null)
-            {
-                foreach (var elemento in Model.Lista)
-                {
-                    <tr>
-                        <td>@elemento.Id</td>
-                        <td>@elemento.Vehiculo</td>
-                        <td>@elemento.Cliente</td>
-                        <td>@elemento.EstadoReserva</td>
-                        <td>@elemento.FechaInicio</td>
-                        <td>@elemento.FechaFin</td>
-                        <td>@elemento.MetodoPago</td>
-                        <td>@elemento.Tarifa</td>
-                        <td>@elemento.PrecioTotal</td>
-                        <td>@elemento.Observaciones</td>
-                    </tr>
-                }
-            }
-        </tbody>
-    </table>
-</div>
+        @if (ViewData.ContainsKey("Mensaje"))
+        {
+            <div class="alert alert-danger">@ViewData["Mensaje"]</div>
+        }
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-secondary" asp-page-handler="BtRefrescar">Ver reservas</button>
+            <button type="submit" class="btn btn-secondary" asp-page-handler="BtBuscar">Buscar</button>
+            <button type="submit" class="btn btn-secondary" asp-page-handler="BtNuevo">Nuevo</button>
+
+            <input asp-for="Filtro!.Id" type="number" min="0" placeholder="Id reserva" />
+            <input asp-for="Filtro!.Vehiculo" type="number" min="0" placeholder="Id vehículo" />
+            <input asp-for="Filtro!.Cliente" type="number" min="0" placeholder="Id cliente" />
+        </div>
+
+        @if (Model.Formulario && Model.Actual != null)
+        {
+            <div class="mb-4">
+                <h3>Reserva</h3>
+                <input type="hidden" asp-for="Actual.Id" />
+
+                <label asp-for="Actual.Vehiculo">Id del vehículo</label>
+                <input asp-for="Actual.Vehiculo" type="number" min="1" />
+                <br />
+
+                <label asp-for="Actual.Cliente">Id del cliente</label>
+                <input asp-for="Actual.Cliente" type="number" min="1" />
+                <br />
+
+                <label asp-for="Actual.EstadoReserva">Id del estado</label>
+                <input asp-for="Actual.EstadoReserva" type="number" min="1" />
+                <br />
+
+                <label asp-for="Actual.FechaInicio">Fecha de inicio</label>
+                <input asp-for="Actual.FechaInicio" type="datetime-local" />
+                <br />
+
+                <label asp-for="Actual.FechaFin">Fecha de fin</label>
+                <input asp-for="Actual.FechaFin" type="datetime-local" />
+                <br />
+
+                <label asp-for="Actual.MetodoPago">Id del método de pago</label>
+                <input asp-for="Actual.MetodoPago" type="number" min="1" />
+                <br />
+
+                <label asp-for="Actual.Tarifa">Id de la tarifa</label>
+                <input asp-for="Actual.Tarifa" type="number" min="1" />
+                <br />
+
+                <label asp-for="Actual.PrecioTotal">Precio total</label>
+                <input asp-for="Actual.PrecioTotal" type="number" min="0" step="0.01" />
+                <br />
+
+                <label asp-for="Actual.Observaciones">Observaciones</label>
+                <input asp-for="Actual.Observaciones" />
+                <br />
+
+                <button type="submit" class="btn btn-secondary" asp-page-handler="BtGuardar">Guardar</button>
+                <button type="submit" class="btn btn-secondary" asp-page-handler="BtRefrescar">Cancelar</button>
+            </div>
+        }
+
+        @if (!Model.Formulario)
+        {
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Vehículo</th>
+                            <th>Cliente</th>
+                            <th>Estado</th>
+                            <th>Fecha inicio</th>
+                            <th>Fecha fin</th>
+                            <th>Método de pago</th>
+                            <th>Tarifa</th>
+                            <th>Precio total</th>
+                            <th>Observaciones</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Lista != null)
+                        {
+                            foreach (var elemento in Model.Lista)
+                            {
+                                <tr>
+                                    <td>@elemento.Id</td>
+                                    <td>@elemento.Vehiculo</td>
+                                    <td>@elemento.Cliente</td>
+                                    <td>@elemento.EstadoReserva</td>
+                                    <td>@elemento.FechaInicio</td>
+                                    <td>@elemento.FechaFin</td>
+                                    <td>@elemento.MetodoPago</td>
+                                    <td>@elemento.Tarifa</td>
+                                    <td>@elemento.PrecioTotal</td>
+                                    <td>@elemento.Observaciones</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-secondary btn-sm"
+                                                asp-page-handler="BtEditar" asp-route-data="@elemento.Id">
+                                            Editar
+                                        </button>
+                                        <button type="submit" class="btn btn-danger btn-sm"
+                                                asp-page-handler="BtPregBorrar" asp-route-data="@elemento.Id">
+                                            Borrar
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        @if (Model.Borrar && Model.Actual != null)
+        {
+            <div class="popup">
+                <div class="pp_del_inner">
+                    <h3>Confirmar eliminación</h3>
+                    <p>¿Deseas eliminar la reserva con Id <strong>@Model.Actual.Id</strong>?</p>
+                    <input type="hidden" asp-for="Actual.Id" />
+                    <button type="submit" class="btn btn-secondary" asp-page-handler="BtCancelarBorrar">Cancelar</button>
+                    <button type="submit" class="btn btn-danger" asp-page-handler="BtBorrar">Confirmar</button>
+                </div>
+            </div>
+        }
+    </div>
+</form>

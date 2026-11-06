@@ -1,21 +1,81 @@
-﻿@page
+@page
 @model IndexModel
+
 @{
-    ViewData["Title"] = "Vehiculos Disponibles";
+    ViewData["Title"] = "Vehículos disponibles";
 }
 
-<h1>Vehículos disponibles</h1>
+<section class="d-flex justify-content-between align-items-center gap-3 my-4">
+    <div>
+        <h1 class="h3 mb-1">Vehículos disponibles</h1>
+        <p class="text-muted mb-0">Explora los vehículos listos para alquilar.</p>
+    </div>
+
+    <span class="badge bg-success">@Model.Lista.Count disponibles</span>
+</section>
 
 @if (Model.Lista.Count == 0)
 {
-    <p>No hay vehículos registrados.</p>
+    <div class="alert alert-light border">
+        No hay vehículos disponibles en este momento.
+    </div>
 }
 else
 {
-    @foreach (var vehiculo in Model.Lista)
-    {
-        <article>
-            @* Aquí van los campos reales de la entidad, por ejemplo marca, modelo y precio *@
-        </article>
-    }
+    <div class="row g-4">
+        @foreach (var vehiculo in Model.Lista)
+        {
+            var foto = vehiculo.VehiculoFoto?
+                .FirstOrDefault(f => !string.IsNullOrWhiteSpace(f.Ruta));
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <article class="card h-100 shadow-sm">
+                    @if (!string.IsNullOrWhiteSpace(foto?.Ruta))
+                    {
+                        <img src="@foto.Ruta"
+                             class="card-img-top"
+                             alt="Foto de @vehiculo._Marca?.Nombre"
+                             style="height: 190px; object-fit: contain; background-color: #f8f9fa;" />
+                    }
+                    else
+                    {
+                        <div class="d-flex justify-content-center align-items-center bg-light text-muted"
+                             style="height: 190px;">
+                            Sin fotografía
+                        </div>
+                    }
+
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Disponible</span>
+
+                        <h2 class="h5 card-title">
+                            @vehiculo._Marca?.Nombre
+                            @vehiculo._TipoVehiculo?.Nombre
+                        </h2>
+
+                        <p class="text-muted">Modelo @vehiculo.Modelo</p>
+
+                        <p class="mb-1">
+                            <strong>Color:</strong>
+                            @(vehiculo._ColorVehiculo?.Nombre ?? "No especificado")
+                        </p>
+
+                        <p class="mb-1">
+                            <strong>Transmisión:</strong>
+                            @(vehiculo._SistemaTransmision?.Nombre ?? "No especificada")
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>Combustible:</strong>
+                            @(vehiculo._TipoCombustible?.Nombre ?? "No especificado")
+                        </p>
+                    </div>
+
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">Placa: @vehiculo.Placa</small>
+                    </div>
+                </article>
+            </div>
+        }
+    </div>
 }

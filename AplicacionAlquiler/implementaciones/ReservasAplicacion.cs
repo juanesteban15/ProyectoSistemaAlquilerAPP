@@ -89,6 +89,28 @@ namespace AplicacionAlquiler.implementaciones
             return reservas;
         }
 
+        public List<Reservas> Buscar(Reservas entidad)
+        {
+            var consulta = this.conexion.Reservas!.AsQueryable();
+
+            if (entidad.Id > 0)
+                consulta = consulta.Where(r => r.Id == entidad.Id);
+
+            if (entidad.Vehiculo > 0)
+                consulta = consulta.Where(r => r.Vehiculo == entidad.Vehiculo);
+
+            if (entidad.Cliente > 0)
+                consulta = consulta.Where(r => r.Cliente == entidad.Cliente);
+
+            return consulta
+                .Include(r => r._Vehiculo)
+                .Include(r => r._Cliente)
+                .Include(r => r._EstadoReserva)
+                .Include(r => r._MetodoPago)
+                .Include(r => r._Tarifa)
+                .ToList();
+        }
+
         public Reservas Insertar(Reservas entidad)
         {
             // Comprueba que el rango de fechas tenga sentido.

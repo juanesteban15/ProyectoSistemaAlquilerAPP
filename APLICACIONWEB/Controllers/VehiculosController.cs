@@ -18,6 +18,14 @@ namespace APLICACIONWEB.Controllers
         [HttpPost]
         public List<Vehiculos> Consultar() => aplicacion.Consultar();
 
+
+
+        [HttpPost]
+        public List<Vehiculos> Buscar(Vehiculos entidad)
+        {
+            return this.aplicacion.Buscar(entidad);
+        }
+
         [HttpPost]
         public Vehiculos Insertar([FromBody] Vehiculos entidad) => aplicacion.Insertar(entidad);
 

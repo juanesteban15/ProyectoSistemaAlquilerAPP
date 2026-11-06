@@ -1,0 +1,132 @@
+﻿@page
+@model Front_Alquiler.Pages.Cuenta.RegistrarseModel
+
+@{
+    ViewData["Title"] = "Registrarse";
+}
+
+<div class="row justify-content-center my-5">
+    <div class="col-12 col-lg-8">
+        <h1 class="h3 mb-4">Crear una cuenta</h1>
+
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <h2 class="h5 mt-3">Datos personales</h2>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.Nombre" class="form-label">Nombre</label>
+                    <input asp-for="Registro.Nombre" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.Apellido" class="form-label">Apellido</label>
+                    <input asp-for="Registro.Apellido" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.Email" class="form-label">Correo electrónico</label>
+                    <input asp-for="Registro.Email" type="email" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.FechaNacimiento" class="form-label">
+                        Fecha de nacimiento
+                    </label>
+                    <input asp-for="Registro.FechaNacimiento" type="date" class="form-control" />
+                    <span asp-validation-for="Registro.FechaNacimiento" class="text-danger"></span>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.TipoDocumento" class="form-label">
+                        Tipo de documento
+                    </label>
+                    <select asp-for="Registro.TipoDocumento" class="form-select">
+                        <option value="">Selecciona un tipo</option>
+                        <option value="CC">Cédula de ciudadanía</option>
+                        <option value="CE">Cédula de extranjería</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.NumeroDocumento" class="form-label">
+                        Número de documento
+                    </label>
+                    <input asp-for="Registro.NumeroDocumento" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.Genero" class="form-label">Género</label>
+                    <select asp-for="Registro.Genero" class="form-select">
+                        <option value="">Selecciona un género</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                        <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.PaisNacimiento" class="form-label">
+                        País de nacimiento
+                    </label>
+                    <select asp-for="Registro.PaisNacimiento" class="form-select">
+                        <option value="">Selecciona un país</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="España">España</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.ComplementoPais" class="form-label">
+                        Indicativo telefónico
+                    </label>
+                    <select asp-for="Registro.ComplementoPais" class="form-select">
+                        <option value="">Selecciona un indicativo</option>
+                        <option value="+57">Colombia (+57)</option>
+                        <option value="+58">Venezuela (+58)</option>
+                        <option value="+593">Ecuador (+593)</option>
+                        <option value="+51">Perú (+51)</option>
+                        <option value="+507">Panamá (+507)</option>
+                        <option value="+1">Estados Unidos (+1)</option>
+                        <option value="+34">España (+34)</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Registro.Telefono" class="form-label">Teléfono</label>
+                    <input asp-for="Registro.Telefono" class="form-control" />
+                </div>
+            </div>
+
+            <h2 class="h5 mt-3">Datos de la cuenta</h2>
+
+            <div class="mb-3">
+                <label asp-for="Registro.NombreUsuario" class="form-label">
+                    Nombre de usuario
+                </label>
+                <input asp-for="Registro.NombreUsuario" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Registro.Contrasena" class="form-label">Contraseña</label>
+                <input asp-for="Registro.Contrasena"
+                       type="password"
+                       class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Crear cuenta
+            </button>
+        </form>
+    </div>
+</div>

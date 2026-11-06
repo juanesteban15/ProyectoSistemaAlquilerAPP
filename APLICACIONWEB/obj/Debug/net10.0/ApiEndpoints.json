@@ -1,5 +1,23 @@
 [
   {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "APLICACIONWEB.Controllers.PersonasController",
     "Method": "Actualizar",
     "RelativePath": "Personas/Actualizar",
@@ -160,6 +178,32 @@
     "ReturnTypes": [
       {
         "Type": "AplicacionAlquiler.Dominio.Entidades.Reservas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ReservasController",
+    "Method": "Buscar",
+    "RelativePath": "Reservas/Buscar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Reservas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Reservas, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -367,6 +411,32 @@
   },
   {
     "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
+    "Method": "Buscar",
+    "RelativePath": "Usuarios/Buscar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Usuarios, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
     "Method": "Consultar",
     "RelativePath": "Usuarios/Consultar",
     "HttpMethod": "POST",
@@ -376,6 +446,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Usuarios, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
+    "Method": "IniciarSesion",
+    "RelativePath": "Usuarios/IniciarSesion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitud",
+        "Type": "AplicacionAlquiler.Dominio.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.DTOs.LoginResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -402,6 +498,32 @@
     "ReturnTypes": [
       {
         "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
+    "Method": "Registrar",
+    "RelativePath": "Usuarios/Registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitud",
+        "Type": "AplicacionAlquiler.Dominio.DTOs.RegistroRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -552,6 +674,32 @@
     "ReturnTypes": [
       {
         "Type": "AplicacionAlquiler.Dominio.Entidades.Vehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
+    "Method": "Buscar",
+    "RelativePath": "Vehiculos/Buscar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Entidades.Vehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Vehiculos, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

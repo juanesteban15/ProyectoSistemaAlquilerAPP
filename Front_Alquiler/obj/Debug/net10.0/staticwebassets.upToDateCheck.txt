@@ -62,6 +62,7 @@ C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\Front_Alquiler\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\imagenes\vehiculos\Toyota.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\LICENSE
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

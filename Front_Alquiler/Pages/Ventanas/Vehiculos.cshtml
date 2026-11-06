@@ -1,50 +1,203 @@
 @page
 @model VehiculosModel
+
 @{
     ViewData["Title"] = "Vehículos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Vehículos</h1>
+<form method="post" enctype="multipart/form-data">
 
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Placa</th>
-                <th>Propietario</th>
-                <th>Estado</th>
-                <th>Tipo</th>
-                <th>Marca</th>
-                <th>Color</th>
-                <th>Transmisión</th>
-                <th>Categoría</th>
-                <th>Combustible</th>
-                <th>Modelo</th>
-                <th>Fecha de registro</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model?.Lista != null)
-            {
-                foreach (var elemento in Model.Lista)
-                {
-                    <tr>
-                        <td>@elemento.Id</td>
-                        <td>@elemento.Placa</td>
-                        <td>@elemento.Propietario</td>
-                        <td>@elemento.EstadoVehiculo</td>
-                        <td>@elemento.TipoVehiculo</td>
-                        <td>@elemento.Marca</td>
-                        <td>@elemento.ColorVehiculo</td>
-                        <td>@elemento.SistemaTransmision</td>
-                        <td>@elemento.Categoria</td>
-                        <td>@elemento.TipoCombustible</td>
-                        <td>@elemento.Modelo</td>
-                        <td>@elemento.FechaRegistro</td>
-                    </tr>
-                }
-            }
-        </tbody>
-    </table>
-</div>
+    <div class="text-center">
+        <h1 class="display-4">Vehículos</h1>
+
+        @if (ViewData.ContainsKey("Mensaje"))
+        {
+            <div class="alert alert-danger">
+                @ViewData["Mensaje"]
+            </div>
+        }
+
+        <div>
+            <input type="submit"
+                   value="Ver Vehiculos"
+                   class="btn btn-secondary"
+                   asp-page-handler="BtRefrescar" />
+
+            <input type="submit"
+                   value="Buscar"
+                   class="btn btn-secondary"
+                   asp-page-handler="BtBuscar" />
+
+            <input type="submit"
+                   value="Nuevo"
+                   class="btn btn-secondary"
+                   asp-page-handler="BtNuevo" />
+
+            
+
+            <input id="flPlaca"
+                   placeholder="Placa"
+                   asp-for="Filtro!.Placa" />
+        </div>
+
+        @if (Model.Formulario)
+        {
+            <div>
+                <h3>Vehículo</h3>
+
+                <input type="hidden" asp-for="Actual!.Id" />
+
+                <label>Placa</label>
+                <input id="nmPlaca" asp-for="Actual!.Placa" />
+                <br />
+
+                <label>Propietario</label>
+                <input id="nmPropietario" asp-for="Actual!.Propietario" />
+                <br />
+
+                <label>Estado del vehículo</label>
+                <input id="nmEstadoVehiculo" asp-for="Actual!.EstadoVehiculo" />
+                <br />
+
+                <label>Tipo de vehículo</label>
+                <input id="nmTipoVehiculo" asp-for="Actual!.TipoVehiculo" />
+                <br />
+
+                <label>Marca</label>
+                <input id="nmMarca" asp-for="Actual!.Marca" />
+                <br />
+
+                <label>Color</label>
+                <input id="nmColorVehiculo" asp-for="Actual!.ColorVehiculo" />
+                <br />
+
+                <label>Sistema de transmisión</label>
+                <input id="nmSistemaTransmision"
+                       asp-for="Actual!.SistemaTransmision" />
+                <br />
+
+                <label>Categoría</label>
+                <input id="nmCategoria" asp-for="Actual!.Categoria" />
+                <br />
+
+                <label>Tipo de combustible</label>
+                <input id="nmTipoCombustible"
+                       asp-for="Actual!.TipoCombustible" />
+                <br />
+
+
+
+
+                <label>Modelo</label>
+                <input id="nmModelo" asp-for="Actual!.Modelo" />
+                <br />
+
+                
+                <label>EstadoVehiculo</label>
+                <input id="nmEstadoVehiculo" asp-for="Actual!.EstadoVehiculo" />
+                <br />
+
+                <input type="submit"
+                       value="Guardar"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtGuardar" />
+
+            </div>
+        }
+
+        @if (!Model.Formulario)
+        {
+            <br />
+            <br />
+
+            <div class="containers_vn panel panel-default">
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Placa</th>
+                            <th>Propietario</th>
+                            <th>Estado del vehículo</th>
+                            <th>Tipo</th>
+                            <th>Marca</th>
+                            <th>Color</th>
+                            <th>Transmisión</th>
+                            <th>Categoría</th>
+                            <th>Combustible</th>
+                            <th>Modelo</th>
+                            <th>Fecha de registro</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @if (Model.Lista != null)
+                        {
+                            foreach (var elemento in Model.Lista)
+                            {
+                                <tr>
+                                    <td>@elemento.Id</td>
+                                    <td>@elemento.Placa</td>
+                                    <td>@elemento.Propietario</td>
+                                    <td>@elemento.EstadoVehiculo</td>
+                                    <td>@elemento.TipoVehiculo</td>
+                                    <td>@elemento.Marca</td>
+                                    <td>@elemento.ColorVehiculo</td>
+                                    <td>@elemento.SistemaTransmision</td>
+                                    <td>@elemento.Categoria</td>
+                                    <td>@elemento.TipoCombustible</td>
+                                    <td>@elemento.Modelo</td>
+                                    <td>@elemento.FechaRegistro</td>
+                                    <td>
+                                        <button type="submit"
+                                               class="btn btn-secondary"
+                                               asp-page-handler="BtEditar"
+                                               asp-route-data="@elemento.Id">
+                                        Editar
+                                    </button>
+                                        <input type="submit"
+                                               value="Borrar"
+                                               class="btn btn-secondary"
+                                               asp-page-handler="BtPregBorrar"
+                                               asp-route-data="@elemento.Id" />
+
+                                    </td>
+                                </tr>
+
+
+                            }
+
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        @if (Model.Borrar && Model.Actual != null)
+        {
+            <div class="popup">
+                <div class="pp_del_inner">
+                    <h3>Confirmar eliminación</h3>
+                    <p>
+                        ¿Deseas quitar el vehículo con placa
+                        <strong>@Model.Actual.Placa</strong> de la lista?
+                    </p>
+
+                    <input type="hidden" asp-for="Actual!.Id" />
+
+                    <button type="submit"
+                            class="btn btn-secondary"
+                            asp-page-handler="BtCancelarBorrar">
+                        Cancelar
+                    </button>
+
+                    <button type="submit"
+                            class="btn btn-danger"
+                            asp-page-handler="BtBorrar">
+                        Confirmar
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+</form>

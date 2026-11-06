@@ -19,5 +19,12 @@ namespace AplicacionAlquiler.interfaces
             task.Wait();
             return task.Result;
         }
+
+        public List<Reservas> Buscar(Reservas entidad)
+        {
+            var task = comunicaciones.Ejecutar<List<Reservas>>("Reservas/Buscar", entidad);
+            task.Wait();
+            return task.Result;
+        }
     }
 }

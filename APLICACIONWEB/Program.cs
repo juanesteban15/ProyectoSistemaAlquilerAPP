@@ -32,4 +32,5 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+app.MapGet("/", () => "");
 app.Run();
