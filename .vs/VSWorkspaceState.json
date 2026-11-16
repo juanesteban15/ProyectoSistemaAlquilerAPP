@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AplicacionAlquiler"
+    "\\AplicacionAlquiler",
+    "\\AplicacionAlquiler\\implementaciones"
   ],
-  "SelectedNode": "\\ProyectoAlquilerVehiculos.slnx",
+  "SelectedNode": "\\AplicacionAlquiler\\implementaciones\\VehiculosAplicacion.cs",
   "PreviewInSolutionExplorer": false
 }

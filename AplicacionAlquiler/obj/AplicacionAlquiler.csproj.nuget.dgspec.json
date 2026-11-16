@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\AplicacionAlquiler.csproj": {}
+    "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\AplicacionAlquiler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\AplicacionAlquiler.csproj": {
+    "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\AplicacionAlquiler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\AplicacionAlquiler.csproj",
+        "projectUniqueName": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\AplicacionAlquiler.csproj",
         "projectName": "AplicacionAlquiler",
-        "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\AplicacionAlquiler.csproj",
+        "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\AplicacionAlquiler.csproj",
         "packagesPath": "C:\\Users\\lenov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\obj\\",
+        "outputPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

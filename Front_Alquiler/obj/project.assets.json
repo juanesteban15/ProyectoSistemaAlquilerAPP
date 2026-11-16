@@ -3481,11 +3481,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Front_Alquiler\\Front_Alquiler.csproj",
+      "projectUniqueName": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Front_Alquiler.csproj",
       "projectName": "Front_Alquiler",
-      "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Front_Alquiler\\Front_Alquiler.csproj",
+      "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Front_Alquiler.csproj",
       "packagesPath": "C:\\Users\\lenov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Front_Alquiler\\obj\\",
+      "outputPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3507,8 +3507,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_CSN\\Presentacion_CSN.csproj": {
-              "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_CSN\\Presentacion_CSN.csproj"
+            "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Presentacion_CSN\\Presentacion_CSN.csproj": {
+              "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Presentacion_CSN\\Presentacion_CSN.csproj"
             }
           }
         }

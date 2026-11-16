@@ -418,8 +418,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "entidad",
-        "Type": "AplicacionAlquiler.Dominio.Entidades.Usuarios",
+        "Name": "solicitud",
+        "Type": "AplicacionAlquiler.Dominio.DTOs.BuscarUsuarioRequest",
         "IsRequired": true
       }
     ],

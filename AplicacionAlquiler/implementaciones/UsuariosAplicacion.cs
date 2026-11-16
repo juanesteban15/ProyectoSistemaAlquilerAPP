@@ -84,6 +84,7 @@ namespace AplicacionAlquiler.implementaciones
         {
             return this.IConexion.Usuarios!
                 .Where(x => x.NombreUsuario!.Contains(entidad.NombreUsuario!))
+                .Include(x => x._Persona).Include(x => x._EstadoUsuario)
                 .ToList();
         }
 

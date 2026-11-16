@@ -4381,11 +4381,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_MST\\Presentacion_MST.csproj",
+      "projectUniqueName": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Presentacion_MST\\Presentacion_MST.csproj",
       "projectName": "Presentacion_MST",
-      "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_MST\\Presentacion_MST.csproj",
+      "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Presentacion_MST\\Presentacion_MST.csproj",
       "packagesPath": "C:\\Users\\lenov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\Presentacion_MST\\obj\\",
+      "outputPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Presentacion_MST\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4407,8 +4407,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\AplicacionAlquiler.csproj": {
-              "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\Universidad\\Desarrollo de software\\Proyectocs\\ProyectoAlquilerVehiculos\\AplicacionAlquiler\\AplicacionAlquiler.csproj"
+            "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\AplicacionAlquiler.csproj": {
+              "projectPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\AplicacionAlquiler.csproj"
             }
           }
         }

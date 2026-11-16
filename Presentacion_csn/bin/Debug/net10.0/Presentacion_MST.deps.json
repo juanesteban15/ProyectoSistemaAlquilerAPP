@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "Presentacion_MST/1.0.0": {
+      "Presentacion_mst/1.0.0": {
         "dependencies": {
           "AplicacionAlquiler": "1.0.0",
           "MSTest": "4.0.2",
           "MSTest.TestFramework.Extensions": "4.0.2.0"
         },
         "runtime": {
-          "Presentacion_MST.dll": {}
+          "Presentacion_mst.dll": {}
         }
       },
       "Azure.Core/1.50.0": {
@@ -1635,7 +1635,7 @@
     }
   },
   "libraries": {
-    "Presentacion_MST/1.0.0": {
+    "Presentacion_mst/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Presentacion_CSN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+721b4851ca029efae8282cd5fb1d9a9def4d52fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Presentacion_CSN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Presentacion_CSN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

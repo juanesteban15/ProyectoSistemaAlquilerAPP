@@ -26,3 +26,18 @@ C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\.build-check-api\Debug\net10.0\AplicacionAlquiler.dll
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\.build-check-api\Debug\net10.0\AplicacionAlquiler.pdb
 C:\Users\lenov\OneDrive\Documents\Universidad\Desarrollo de software\Proyectocs\ProyectoAlquilerVehiculos\AplicacionAlquiler\obj\Debug\net10.0\Aplicaci.661DBCBE.Up2Date
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\bin\Debug\net10.0\AplicacionAlquiler.deps.json
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\bin\Debug\net10.0\AplicacionAlquiler.runtimeconfig.json
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\bin\Debug\net10.0\AplicacionAlquiler.dll
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\bin\Debug\net10.0\AplicacionAlquiler.pdb
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.csproj.AssemblyReference.cache
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.AssemblyInfoInputs.cache
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.AssemblyInfo.cs
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.csproj.CoreCompileInputs.cache
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.dll
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\refint\AplicacionAlquiler.dll
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.pdb
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.genruntimeconfig.cache
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\ref\AplicacionAlquiler.dll
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\Aplicaci.661DBCBE.Up2Date

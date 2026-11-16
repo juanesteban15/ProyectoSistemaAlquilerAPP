@@ -1,22 +1,23 @@
-using System.Net.Http.Json;
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.interfaces;
+using AplicacionAlquiler.nucleo;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Net.Http.Json;
 
 namespace Front_Alquiler.Pages.Ventanas
 {
     public class UsuariosModel : PageModel
     {
-        private readonly IUsuariosPresentacion usuariosPresentacion;
+        private readonly IUsuariosPresentacion IUsuariosPresentacion;
 
-        public UsuariosModel(IUsuariosPresentacion usuariosPresentacion)
+        public UsuariosModel(IUsuariosPresentacion IUsuariosPresentacion)
         {
-            this.usuariosPresentacion = usuariosPresentacion;
+            this.IUsuariosPresentacion = IUsuariosPresentacion;
             Filtro = new Usuarios();
         }
 
-        [BindProperty] public List<Usuarios> Lista { get; set; } = new();
+        [BindProperty] public List<Usuarios> Lista { get; set; }
         [BindProperty] public Usuarios? Filtro { get; set; }
         [BindProperty] public Usuarios? Actual { get; set; }
         [BindProperty] public bool Formulario { get; set; }
@@ -28,110 +29,113 @@ namespace Front_Alquiler.Pages.Ventanas
         {
             try
             {
-                Lista = usuariosPresentacion.Consultar();
-                Formulario = false;
-                Borrar = false;
-                Actual = null;
+                Lista = this.IUsuariosPresentacion.Consultar();
+
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
         }
+
+        public void OnPostConsultar()
+        {
+            try
+            {
+                Filtro!.NombreUsuario = Filtro!.NombreUsuario?.Trim() ?? string.Empty;
+                Lista = this.IUsuariosPresentacion.Buscar(Filtro!);
+            }
+            catch (Exception ex)
+            {
+                LogConversor.Log(ex, ViewData!);
+            }
+        }
+
 
         public void OnPostBtBuscar()
         {
             try
             {
-                Filtro ??= new Usuarios();
-                Filtro.NombreUsuario = Filtro.NombreUsuario?.Trim() ?? string.Empty;
-                Lista = usuariosPresentacion.Buscar(Filtro);
+                Filtro!.NombreUsuario = Filtro!.NombreUsuario ?? "";
+                Lista = this.IUsuariosPresentacion.Buscar(Filtro!);
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
         }
+
 
         public void OnPostBtNuevo()
         {
-            Actual = new Usuarios();
-            Formulario = true;
-            Borrar = false;
-        }
-
-        public void OnPostBtEditar(int data)
-        {
             try
             {
-                Lista = usuariosPresentacion.Consultar();
-                Actual = Lista.FirstOrDefault(u => u.Id == data);
-                Formulario = Actual != null;
-                Borrar = false;
+                Formulario = true;
+                this.Actual = new Usuarios();
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
+
+
         }
+
+
 
         public void OnPostBtGuardar()
         {
             try
             {
-                if (Actual == null)
-                    throw new InvalidOperationException("No se recibieron los datos del usuario.");
-
-                if (Actual.Id == 0)
-                {
-                    usuariosPresentacion.Insertar(Actual);
-                }
+                if (this.Actual!.Id == 0)
+                    this.Actual = this.IUsuariosPresentacion.Insertar(this.Actual!);
                 else
-                {
-                    // El servicio actual exige Contrasena al actualizar. Recupera el hash existente
-                    // en el servidor para conservarlo, sin mostrarlo ni enviarlo como campo del formulario.
-                    var usuarioExistente = usuariosPresentacion.Consultar()
-                        .FirstOrDefault(u => u.Id == Actual.Id);
-
-                    if (usuarioExistente == null)
-                        throw new InvalidOperationException($"No existe el usuario con Id {Actual.Id}.");
-
-                    Actual.Contrasena = usuarioExistente.Contrasena;
-                    usuariosPresentacion.Actualizar(Actual);
-                }
-
-                Formulario = false;
-                Actual = null;
+                    this.Actual = this.IUsuariosPresentacion.Actualizar(this.Actual!);
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
-                Formulario = true;
+                LogConversor.Log(ex, ViewData!);
             }
             finally
             {
-                try
-                {
-                    Lista = usuariosPresentacion.Consultar();
-                }
-                catch (Exception ex)
-                {
-                    MostrarError(ex);
-                }
+                OnPostBtBuscar();
+            }
+
+
+        }
+
+
+        public void OnPostBtEditar(int data)
+        {
+            try
+            {
+                int id = Convert.ToInt32(data);
+                Lista = IUsuariosPresentacion.Consultar();
+                Actual = Lista.FirstOrDefault(u => u.Id == id);
+                Formulario = Actual != null;
+            }
+            catch (Exception ex)
+            {
+                LogConversor.Log(ex, ViewData!);
             }
         }
+
+
+
+
+
 
         public void OnPostBtPregBorrar(int data)
         {
             try
             {
-                Lista = usuariosPresentacion.Consultar();
+                Lista = IUsuariosPresentacion.Consultar();
                 Actual = Lista.FirstOrDefault(u => u.Id == data);
                 Borrar = Actual != null;
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
         }
 
@@ -146,57 +150,26 @@ namespace Front_Alquiler.Pages.Ventanas
         {
             try
             {
-                if (Actual == null || Actual.Id <= 0)
-                    throw new InvalidOperationException("No se recibió el usuario que se quiere eliminar.");
-
-                // El endpoint existente de Usuarios/Borrar usa HTTP DELETE.
-                var usuarioCompleto = usuariosPresentacion.Consultar()
-                    .FirstOrDefault(u => u.Id == Actual.Id);
-
-                if (usuarioCompleto == null)
-                    throw new InvalidOperationException($"No existe el usuario con Id {Actual.Id}.");
-
-                using var cliente = new HttpClient();
-                using var solicitud = new HttpRequestMessage(
-                    HttpMethod.Delete,
-                    "http://localhost:5182/Usuarios/Borrar")
+                if (this.Actual == null || this.Actual.Id <= 0)
                 {
-                    Content = JsonContent.Create(usuarioCompleto)
-                };
-
-                using var respuesta = await cliente.SendAsync(solicitud);
-                if (!respuesta.IsSuccessStatusCode)
-                {
-                    var detalle = await respuesta.Content.ReadAsStringAsync();
-                    throw new InvalidOperationException(
-                        string.IsNullOrWhiteSpace(detalle)
-                            ? $"La API respondió {(int)respuesta.StatusCode}."
-                            : detalle);
+                    throw new InvalidOperationException("No se recibió el vehículo que se quiere eliminar.");
                 }
 
+                this.IUsuariosPresentacion.Borrar(this.Actual);
                 Borrar = false;
                 Actual = null;
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
             finally
             {
-                try
-                {
-                    Lista = usuariosPresentacion.Consultar();
-                }
-                catch (Exception ex)
-                {
-                    MostrarError(ex);
-                }
+                OnPostBtRefrescar();
             }
+
         }
 
-        private void MostrarError(Exception ex)
-        {
-            ViewData["Mensaje"] = ex.GetBaseException().Message;
-        }
+
     }
 }

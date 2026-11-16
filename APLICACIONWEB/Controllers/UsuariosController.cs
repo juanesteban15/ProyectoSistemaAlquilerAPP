@@ -16,11 +16,24 @@ namespace APLICACIONWEB.Controllers
             this.aplicacion = aplicacion;
         }
 
+
+
+
         [HttpPost]
         public List<Usuarios> Consultar() => aplicacion.Consultar();
 
+
         [HttpPost]
-        public List<Usuarios> Buscar([FromBody] Usuarios entidad) => aplicacion.Buscar(entidad);
+        public List<Usuarios> Buscar([FromBody] BuscarUsuarioRequest solicitud)
+        {
+            var filtro = new Usuarios
+            {
+                NombreUsuario = solicitud.NombreUsuario
+            };
+
+            return aplicacion.Buscar(filtro);
+        }
+
 
         [HttpPost]
         public Usuarios Insertar([FromBody] Usuarios entidad) => aplicacion.Insertar(entidad);
