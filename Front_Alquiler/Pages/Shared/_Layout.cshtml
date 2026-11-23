@@ -19,24 +19,75 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Usuarios">Usuarios</a>
+                            <a class="nav-link" asp-page="/Index">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Reservas">Reservas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Vehiculos">Vehículos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Ventanas/Usuarios">Usuarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Ventanas/Vehiculos">Vehículos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Ventanas/VehiculoFoto">Fotos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Ventanas/Reservas">Reservas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Ventanas/Catalogos">Catálogos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Ventanas/Tarifas">Tarifas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Ventanas/Personas">Personas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Ventanas/Auditoria">Auditoría</a>
+                            </li>
+                        }
+                        else if (User.IsInRole("Cliente"))
+                        {
+
+                            <li class="nav-item ms-lg-2">
+                                <a class="btn btn-primary rounded-pill px-3"
+                                   asp-page="/Ventanas/PublicarVehiculo">
+                                    Publicar vehículo
+                                </a>
+                            </li>
+                        }
+
                     </ul>
-                        <li class="nav-item">
-                        <a class="btn btn-outline-primary" asp-page="/Cuenta/IniciarSesion">IniciarSesion</a>
-                        </li>
-                    </ul>
+
+                    <div class="d-flex align-items-center gap-2">
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+
+
+                            <span>Hola , @User.Identity.Name</span>
+
+                            <form method="post" asp-page="/Cuenta/CerrarSesion">
+                                <button type="submit" class="btn btn-outline-secondary">
+                                    Cerrar sesión
+                                </button>
+                            </form>
+
+
+           
+                        }
+                        else
+                        {
+                            <a class="btn btn-outline-primary"
+                               asp-page="/Cuenta/IniciarSesion">
+                                Iniciar sesión
+                            </a>
+                        }
+                    </div>
                 </div>
             </div>
         </nav>

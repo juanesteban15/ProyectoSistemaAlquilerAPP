@@ -3,6 +3,7 @@ using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.Servicio;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace AplicacionAlquiler.interfaces
 {
@@ -30,6 +31,7 @@ namespace AplicacionAlquiler.interfaces
         public DbSet<TiposCombustibles>? TiposCombustibles { get; set; }
         public DbSet<TiposVehiculos>? TiposVehiculos { get; set; }
 
+        public DatabaseFacade Database { get; }
         EntityEntry<T> Entry<T>(T entity) where T : class;
         int SaveChanges();
     }

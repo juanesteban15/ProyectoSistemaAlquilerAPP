@@ -62,7 +62,10 @@ C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Front_Alquiler
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Front_Alquiler\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\imagenes\vehiculos\31725ed4-4464-4139-9b18-2a3a6b7cfe85.webp
 wwwroot\imagenes\vehiculos\Toyota.jpg
+wwwroot\imagenes\vehiculos\cd7ab646-a73e-4e88-be84-c00e4d26b7b2.webp
+wwwroot\imagenes\vehiculos\e94255f8-2062-4145-a0ca-68025de0dce4.webp
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\LICENSE
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

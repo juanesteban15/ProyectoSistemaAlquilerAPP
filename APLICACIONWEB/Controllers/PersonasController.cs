@@ -15,26 +15,26 @@ namespace APLICACIONWEB.Controllers
             this.IPersonasAplicacion = IPersonasAplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Personas> Consultar()
         {
             return this.IPersonasAplicacion.Consultar();
         }
 
         [HttpPost]
-        public Personas Insertar(Personas entidad)
+        public Personas Insertar([FromBody] Personas entidad)
         {
             return this.IPersonasAplicacion.Insertar(entidad);
         }
 
-        [HttpPut]
-        public Personas Actualizar(Personas entidad)
+        [HttpPost]
+        public Personas Actualizar([FromBody] Personas entidad)
         {
             return this.IPersonasAplicacion.Actualizar(entidad);
         }
 
-        [HttpDelete]
-        public Personas Borrar(Personas entidad)
+        [HttpPost]
+        public Personas Borrar([FromBody] Personas entidad)
         {
             return this.IPersonasAplicacion.Borrar(entidad);
         }

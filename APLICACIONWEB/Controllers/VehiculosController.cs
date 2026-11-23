@@ -1,4 +1,5 @@
 using AplicacionAlquiler.Dominio.Entidades;
+using AplicacionAlquiler.Dominio.DTOs;
 using AplicacionAlquiler.interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,7 @@ namespace APLICACIONWEB.Controllers
 
 
         [HttpPost]
-        public List<Vehiculos> Buscar(Vehiculos entidad)
+        public List<Vehiculos> Buscar([FromBody] Vehiculos entidad)
         {
             return this.aplicacion.Buscar(entidad);
         }
@@ -34,5 +35,12 @@ namespace APLICACIONWEB.Controllers
 
         [HttpPost]
         public Vehiculos Borrar([FromBody] Vehiculos entidad) => aplicacion.Borrar(entidad);
+
+
+        [HttpPost]
+        public CrearVehiculoClienteResponse CrearParaCliente( [FromBody] CrearVehiculoClienteRequest solicitud)
+        {
+            return aplicacion.CrearParaCliente(solicitud);
+        }
     }
 }

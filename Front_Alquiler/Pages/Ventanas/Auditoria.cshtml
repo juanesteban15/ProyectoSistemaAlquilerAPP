@@ -1,0 +1,44 @@
+@page
+@model AuditoriaModel
+@{
+    ViewData["Title"] = "Auditoría";
+}
+
+<form method="post">
+    <div class="text-center">
+        <h1 class="display-4">Registro de auditoría</h1>
+
+        @if (ViewData.ContainsKey("Mensaje"))
+        {
+            <div class="alert alert-danger">@ViewData["Mensaje"]</div>
+        }
+
+        <button type="submit" class="btn btn-secondary mb-3" asp-page-handler="BtRefrescar">
+            Actualizar registros
+        </button>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Fecha UTC</th>
+                        <th>Movimiento</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var registro in Model.Lista)
+                    {
+                        <tr>
+                            <td>@registro.Id</td>
+                            <td>@registro.FechaUtc</td>
+                            <td>@registro.Movimiento</td>
+                            <td>@registro.Detalle</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

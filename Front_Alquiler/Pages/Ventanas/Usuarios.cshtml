@@ -65,8 +65,12 @@
                 <input id="nmEstadoUsuario" asp-for="Actual!._EstadoUsuario" />
                 <br />
 
-                <label>Rol</label>
-                <input id="nmRol" asp-for="Actual!.Rol" />
+                <label asp-for="Actual!.Rol">Rol</label>
+                <select id="nmRol" asp-for="Actual!.Rol" class="form-select">
+                    <option value="">Selecciona un rol</option>
+                    <option value="Cliente">Cliente</option>
+                    <option value="Admin">Admin</option>
+                </select>
                 <br />
 
                 
@@ -111,6 +115,7 @@
                             <th>Rol</th>
                             <th>Estado</th>
                             <th>Fecha de creación</th>
+                            <th>Foto de perfil</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -127,18 +132,21 @@
                                     <td>@elemento.Rol</td>
                                     <td>@(elemento._EstadoUsuario?.Nombre) </td>
                                     <td>@elemento.FechaCreacion</td>
+                                    <td>@elemento.FotoPerfilRuta</td>
                                     <td>
 
                                         <button type="submit"
-                                                class="btn btn-secondary btn-sm"
+                                                class="btn btn-secondary"
                                                 asp-page-handler="BtEditar"
                                                 asp-route-data="@elemento.Id">
                                             Editar
                                         </button>
                                         <input type="submit"
+                                            value="Borrar"
                                                class="btn btn-danger btn-sm"
                                                asp-page-handler="BtPregBorrar"
                                                asp-route-data="@elemento.Id" />
+                                               
                                     </td>
                                 </tr>
                             }

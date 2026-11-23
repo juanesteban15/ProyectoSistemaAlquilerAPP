@@ -10,11 +10,11 @@ namespace Front_Alquiler.Pages.Cuenta
 {
     public class IniciarSesionModel : PageModel
     {
-        private readonly IUsuariosPresentacion usuariosPresentacion;
+        private readonly IUsuariosPresentacion IUsuariosPresentacion;
 
-        public IniciarSesionModel(IUsuariosPresentacion usuariosPresentacion)
+        public IniciarSesionModel(IUsuariosPresentacion IUsuariosPresentacion)
         {
-            this.usuariosPresentacion = usuariosPresentacion;
+            this.IUsuariosPresentacion = IUsuariosPresentacion;
         }
 
         [BindProperty]
@@ -26,7 +26,7 @@ namespace Front_Alquiler.Pages.Cuenta
 
         public async Task<IActionResult> OnPostAsync()
         {
-            var resultado = usuariosPresentacion.IniciarSesion(Credenciales);
+            var resultado = IUsuariosPresentacion.IniciarSesion(Credenciales);
 
             if (!resultado.Autenticado)
             {
@@ -51,7 +51,13 @@ namespace Front_Alquiler.Pages.Cuenta
 
             await HttpContext.SignInAsync(
                 CookieAuthenticationDefaults.AuthenticationScheme,
-                new ClaimsPrincipal(identidad));
+                new ClaimsPrincipal(identidad),
+                new AuthenticationProperties
+                {
+                    IsPersistent = true,
+                    ExpiresUtc = DateTimeOffset.UtcNow.AddDays(7)
+                });
+
 
             return RedirectToPage("/Index");
         }

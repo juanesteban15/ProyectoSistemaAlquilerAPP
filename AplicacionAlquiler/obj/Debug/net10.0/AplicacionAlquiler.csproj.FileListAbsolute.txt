@@ -40,4 +40,5 @@ C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlqu
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.pdb
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.genruntimeconfig.cache
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\ref\AplicacionAlquiler.dll
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\AplicacionAlquiler.sourcelink.json
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\AplicacionAlquiler\obj\Debug\net10.0\Aplicaci.661DBCBE.Up2Date

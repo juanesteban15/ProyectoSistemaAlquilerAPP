@@ -1,0 +1,109 @@
+@page
+@model ReservarVehiculoModel
+
+@{
+    ViewData["Title"] = "Reservar vehículo";
+}
+
+<div class="container py-4">
+    <h1 class="h3 mb-4">Reservar vehículo</h1>
+
+    @if (!string.IsNullOrWhiteSpace(Model.Mensaje))
+    {
+        <div class="alert alert-success">
+            @Model.Mensaje
+        </div>
+    }
+
+    <div asp-validation-summary="ModelOnly"
+         class="alert alert-danger">
+    </div>
+
+    @if (Model.Vehiculo == null || Model.Tarifa == null)
+    {
+        <div class="alert alert-warning">
+            No se encontró el vehículo o no tiene una tarifa activa.
+        </div>
+    }
+    else
+    {
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="h5">
+                    @Model.Vehiculo._Marca?.Nombre
+                    @Model.Vehiculo._TipoVehiculo?.Nombre
+                </h2>
+
+                <p>Modelo: @Model.Vehiculo.Modelo</p>
+                <p>Placa: @Model.Vehiculo.Placa</p>
+                <p>
+                    Tarifa diaria:
+                    <strong>@Model.Tarifa.PrecioPorDia.ToString("C")</strong>
+                </p>
+
+                <form method="post">
+                    <input type="hidden" asp-for="VehiculoId" />
+
+                    <div class="mb-3">
+                        <label asp-for="FechaInicio" class="form-label">
+                            Fecha de inicio
+                        </label>
+                        <input asp-for="FechaInicio"
+                               type="date"
+                               class="form-control" />
+                        <span asp-validation-for="FechaInicio"
+                              class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="FechaFin" class="form-label">
+                            Fecha de fin
+                        </label>
+                        <input asp-for="FechaFin"
+                               type="date"
+                               class="form-control" />
+                        <span asp-validation-for="FechaFin"
+                              class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="MetodoPagoId" class="form-label">
+                            Método de pago
+                        </label>
+                        <select asp-for="MetodoPagoId"
+                                class="form-select">
+                            <option value="">Selecciona un método de pago</option>
+                            @foreach (var metodo in Model.MetodosPago)
+                            {
+                                <option value="@metodo.Id">@metodo.Nombre</option>
+                            }
+                        </select>
+                        <span asp-validation-for="MetodoPagoId"
+                              class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Observaciones" class="form-label">
+                            Observaciones
+                        </label>
+                        <textarea asp-for="Observaciones"
+                                  class="form-control"
+                                  rows="3"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            asp-page-handler="Guardar"
+                            class="btn btn-primary">
+                        Enviar solicitud de reserva
+                    </button>
+
+                    <a asp-page="/Ventanas/DetalleVehiculo"
+                       asp-route-id="@Model.Vehiculo.Id"
+                       class="btn btn-outline-secondary">
+                        Volver al vehículo
+                    </a>
+                </form>
+            </div>
+        </div>
+    }
+</div>

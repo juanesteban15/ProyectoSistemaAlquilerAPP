@@ -1,12 +1,15 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.interfaces;
 using AplicacionAlquiler.nucleo;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Net.Http.Json;
 
 namespace Front_Alquiler.Pages.Ventanas
 {
+
+    [Authorize(Roles = "Admin")]
     public class UsuariosModel : PageModel
     {
         private readonly IUsuariosPresentacion IUsuariosPresentacion;

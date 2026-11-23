@@ -3,34 +3,82 @@
   "WorkspaceRootPath": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\aplicacionalquiler\\implementaciones\\usuariosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\implementaciones\\usuariosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\reservarvehiculo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\reservarvehiculo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\aplicacionalquiler\\dominio\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\reservarvehiculo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\reservarvehiculo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B71853AC-36ED-453F-B90D-502BA109AB61}|APLICACIONWEB\\APLICACIONWEB.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\aplicacionweb\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B71853AC-36ED-453F-B90D-502BA109AB61}|APLICACIONWEB\\APLICACIONWEB.csproj|solutionrelative:aplicacionweb\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\detallevehiculo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\detallevehiculo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\usuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\usuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\usuarios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\usuarios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\detallevehiculo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\detallevehiculo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\reservas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\reservas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\cuenta\\iniciarsesion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\cuenta\\iniciarsesion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B71853AC-36ED-453F-B90D-502BA109AB61}|APLICACIONWEB\\APLICACIONWEB.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\aplicacionweb\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B71853AC-36ED-453F-B90D-502BA109AB61}|APLICACIONWEB\\APLICACIONWEB.csproj|solutionrelative:aplicacionweb\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\catalogos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\catalogos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\personas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\personas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\personas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\personas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\front_alquiler\\pages\\ventanas\\catalogos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC4B3FE-63CE-41B5-83FE-45EAFF83113E}|Front_Alquiler\\Front_Alquiler.csproj|solutionrelative:front_alquiler\\pages\\ventanas\\catalogos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\aplicacionalquiler\\dominio\\entidades\\vehiculofoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\dominio\\entidades\\vehiculofoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\aplicacionalquiler\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|c:\\users\\lenov\\onedrive\\documents\\proyectosistemaalquilerapp-main\\aplicacionalquiler\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCF1E7-F8FC-6876-F42C-3FADDE28A85F}|AplicacionAlquiler\\AplicacionAlquiler.csproj|solutionrelative:aplicacionalquiler\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,67 +98,223 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuariosAplicacion.cs",
-              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\implementaciones\\UsuariosAplicacion.cs",
-              "RelativeDocumentMoniker": "AplicacionAlquiler\\implementaciones\\UsuariosAplicacion.cs",
-              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\implementaciones\\UsuariosAplicacion.cs",
-              "RelativeToolTip": "AplicacionAlquiler\\implementaciones\\UsuariosAplicacion.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAmwFcAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ReservarVehiculo.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\ReservarVehiculo.cshtml.cs",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\ReservarVehiculo.cshtml.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\ReservarVehiculo.cshtml.cs",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\ReservarVehiculo.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T23:44:58.952Z",
+              "WhenOpened": "2026-11-23T22:53:12.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservarVehiculo.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\ReservarVehiculo.cshtml",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\ReservarVehiculo.cshtml",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\ReservarVehiculo.cshtml",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\ReservarVehiculo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:52:58.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IniciarSesion.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Cuenta\\IniciarSesion.cshtml",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Cuenta\\IniciarSesion.cshtml",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Cuenta\\IniciarSesion.cshtml",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Cuenta\\IniciarSesion.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:35:38.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Personas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Personas.cshtml.cs",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\Personas.cshtml.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Personas.cshtml.cs",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\Personas.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T22:33:08.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Personas.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Personas.cshtml",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\Personas.cshtml",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Personas.cshtml",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\Personas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:33:04.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Catalogos.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Catalogos.cshtml",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\Catalogos.cshtml",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Catalogos.cshtml",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\Catalogos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:28:34.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Catalogos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Catalogos.cshtml.cs",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\Catalogos.cshtml.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Catalogos.cshtml.cs",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\Catalogos.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T22:28:31.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\APLICACIONWEB\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "APLICACIONWEB\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\APLICACIONWEB\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "APLICACIONWEB\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "DetalleVehiculo.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\DetalleVehiculo.cshtml.cs",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\DetalleVehiculo.cshtml.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\DetalleVehiculo.cshtml.cs",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\DetalleVehiculo.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T23:44:30.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\Dominio\\Entidades\\Usuarios.cs",
-              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Entidades\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\Dominio\\Entidades\\Usuarios.cs",
-              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Entidades\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T23:42:23.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Usuarios.cshtml",
-              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Usuarios.cshtml",
-              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\Usuarios.cshtml",
-              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Usuarios.cshtml",
-              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\Usuarios.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAH8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-15T23:40:17.758Z",
+              "WhenOpened": "2026-11-23T22:22:43.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Usuarios.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Usuarios.cshtml.cs",
-              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\Usuarios.cshtml.cs",
-              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Usuarios.cshtml.cs",
-              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\Usuarios.cshtml.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAkwAwAAAAAAAAAAAAAAA==",
+              "Title": "DetalleVehiculo.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\DetalleVehiculo.cshtml",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\DetalleVehiculo.cshtml",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\DetalleVehiculo.cshtml",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\DetalleVehiculo.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:22:27.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VehiculoFoto.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\Dominio\\Entidades\\VehiculoFoto.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\Dominio\\Entidades\\VehiculoFoto.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\Dominio\\Entidades\\VehiculoFoto.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\Dominio\\Entidades\\VehiculoFoto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T23:27:05.796Z",
+              "WhenOpened": "2026-11-23T22:04:59.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T21:37:28.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\implementaciones\\Conexion.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\implementaciones\\Conexion.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\implementaciones\\Conexion.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\implementaciones\\Conexion.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T21:34:06.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IConexion.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\interfaces\\IConexion.cs",
+              "RelativeDocumentMoniker": "AplicacionAlquiler\\interfaces\\IConexion.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\AplicacionAlquiler\\interfaces\\IConexion.cs",
+              "RelativeToolTip": "AplicacionAlquiler\\interfaces\\IConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T21:34:03.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VehiculosController.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\APLICACIONWEB\\Controllers\\VehiculosController.cs",
+              "RelativeDocumentMoniker": "APLICACIONWEB\\Controllers\\VehiculosController.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\APLICACIONWEB\\Controllers\\VehiculosController.cs",
+              "RelativeToolTip": "APLICACIONWEB\\Controllers\\VehiculosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T21:33:54.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reservas.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Reservas.cshtml",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Ventanas\\Reservas.cshtml",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Ventanas\\Reservas.cshtml",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Ventanas\\Reservas.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T21:33:48.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAQwFIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T21:23:43.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Front_Alquiler\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\lenov\\OneDrive\\Documents\\ProyectoSistemaAlquilerAPP-main\\Front_Alquiler\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Front_Alquiler\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T21:24:28.921Z",
               "EditorCaption": ""
             }
           ]

@@ -1,3 +1,4 @@
+using AplicacionAlquiler.Dominio.DTOs;
 using AplicacionAlquiler.Dominio.Entidades;
 
 namespace AplicacionAlquiler.interfaces
@@ -8,5 +9,6 @@ namespace AplicacionAlquiler.interfaces
         List<Tarifas> Consultar();
         Tarifas Actualizar(Tarifas entidad);
         Tarifas Borrar(Tarifas entidad);
+
     }
 }

@@ -1,3 +1,4 @@
+using AplicacionAlquiler.Dominio.DTOs;
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.interfaces;
 using Presentacion_CSN.Interfaces;
@@ -72,6 +73,25 @@ namespace AplicacionAlquiler.interfaces
             task.Wait();
             return task.Result;
         }
+
+
+
+        public CrearVehiculoClienteResponse CrearParaCliente(
+    CrearVehiculoClienteRequest solicitud)
+        {
+            var task = IComunicaciones.Ejecutar<CrearVehiculoClienteResponse>(
+                "Vehiculos/CrearParaCliente",
+                solicitud);
+
+            task.Wait();
+            return task.Result;
+        }
+
+
+
+
+
+
 
         private bool Validar(Vehiculos entidad)
         {

@@ -19,7 +19,7 @@ namespace APLICACIONWEB.Controllers
         public List<VehiculoFoto> Consultar() => aplicacion.Consultar();
 
         [HttpPost]
-        public VehiculoFoto Insertar([FromBody] VehiculoFoto entidad) => aplicacion.Insertar(entidad);
+        public VehiculoFoto Insertar([FromBody] VehiculoFoto foto) => aplicacion.Insertar(foto);
 
         [HttpPost]
         public VehiculoFoto Actualizar([FromBody] VehiculoFoto entidad) => aplicacion.Actualizar(entidad);

@@ -83,7 +83,7 @@
                             <th>Fecha inicio</th>
                             <th>Fecha fin</th>
                             <th>Método de pago</th>
-                            <th>Tarifa</th>
+                            <th>Precio por dia</th>
                             <th>Precio total</th>
                             <th>Observaciones</th>
                             <th>Acciones</th>
@@ -96,13 +96,13 @@
                             {
                                 <tr>
                                     <td>@elemento.Id</td>
-                                    <td>@elemento.Vehiculo</td>
-                                    <td>@elemento.Cliente</td>
-                                    <td>@elemento.EstadoReserva</td>
+                                    <td>@elemento._Vehiculo?.Placa </td>
+                                    <td>@elemento._Cliente?.NombreUsuario </td>
+                                    <td>@elemento._EstadoReserva?.Nombre</td>
                                     <td>@elemento.FechaInicio</td>
                                     <td>@elemento.FechaFin</td>
-                                    <td>@elemento.MetodoPago</td>
-                                    <td>@elemento.Tarifa</td>
+                                    <td>@elemento._MetodoPago?.Nombre</td>
+                                    <td>@elemento._Tarifa?.PrecioPorDia</td>
                                     <td>@elemento.PrecioTotal</td>
                                     <td>@elemento.Observaciones</td>
                                     <td>

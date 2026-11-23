@@ -11,7 +11,7 @@ namespace AplicacionAlquiler.Dominio.Catalogo
         public string Nombre { get; set; }
         public int TipoVehiculoId { get; set; }
 
-        [ForeignKey("TipoVehiculoId")] public TiposVehiculos TipoVehiculo { get; set; }
+        [ForeignKey("TipoVehiculoId")] public TiposVehiculos? TipoVehiculo { get; set; }
         [JsonIgnore] public List<Vehiculos>? Vehiculos { get; set; }
 
 

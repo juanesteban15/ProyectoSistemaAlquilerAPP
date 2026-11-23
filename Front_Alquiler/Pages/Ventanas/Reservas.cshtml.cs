@@ -1,45 +1,43 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.interfaces;
+using AplicacionAlquiler.nucleo;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Presentacion_CSN.Interfaces;
 
 namespace Front_Alquiler.Pages.Ventanas
 {
+    [Authorize(Roles = "Admin")]
     public class ReservasModel : PageModel
     {
-        private readonly IReservasPresentacion reservasPresentacion;
-        private readonly IComunicaciones comunicaciones;
+        private readonly IReservasPresentacion IReservasPresentacion;
 
-        public ReservasModel(
-            IReservasPresentacion reservasPresentacion,
-            IComunicaciones comunicaciones)
+        public ReservasModel(IReservasPresentacion reservasPresentacion)
         {
-            this.reservasPresentacion = reservasPresentacion;
-            this.comunicaciones = comunicaciones;
+            this.IReservasPresentacion = reservasPresentacion;
             Filtro = new Reservas();
         }
 
         [BindProperty] public List<Reservas> Lista { get; set; } = new();
         [BindProperty] public Reservas? Filtro { get; set; }
         [BindProperty] public Reservas? Actual { get; set; }
-        [BindProperty] public bool Formulario { get; set; }
-        [BindProperty] public bool Borrar { get; set; }
+        [BindProperty] public bool Formulario { get; set; } = false;
+        [BindProperty] public bool Borrar { get; set; } = false;
 
-        public void OnGet() => OnPostBtRefrescar();
+        public void OnGet() { OnPostBtRefrescar(); }
 
         public void OnPostBtRefrescar()
         {
             try
             {
-                Lista = reservasPresentacion.Consultar();
+                Lista = IReservasPresentacion.Consultar();
                 Formulario = false;
                 Borrar = false;
                 Actual = null;
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
         }
 
@@ -48,38 +46,30 @@ namespace Front_Alquiler.Pages.Ventanas
             try
             {
                 Filtro ??= new Reservas();
-                Lista = reservasPresentacion.Buscar(Filtro);
+                Lista = IReservasPresentacion.Buscar(Filtro);
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
         }
 
         public void OnPostBtNuevo()
         {
-            Actual = new Reservas
-            {
-                FechaInicio = DateTime.Now,
-                FechaFin = DateTime.Now,
-                FechaCreacion = DateTime.Now
-            };
-            Formulario = true;
-            Borrar = false;
-        }
-
-        public void OnPostBtEditar(int data)
-        {
             try
             {
-                Lista = reservasPresentacion.Consultar();
-                Actual = Lista.FirstOrDefault(r => r.Id == data);
-                Formulario = Actual != null;
+                Formulario = true;
                 Borrar = false;
+                Actual = new Reservas
+                {
+                    FechaInicio = DateTime.Now,
+                    FechaFin = DateTime.Now,
+                    FechaCreacion = DateTime.Now
+                };
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
         }
 
@@ -91,28 +81,36 @@ namespace Front_Alquiler.Pages.Ventanas
                     throw new InvalidOperationException("No se recibieron los datos de la reserva.");
 
                 if (Actual.Id == 0)
-                    EjecutarApi<Reservas>("Reservas/Insertar", Actual);
+                    Actual = IReservasPresentacion.Insertar(Actual);
                 else
-                    EjecutarApi<Reservas>("Reservas/Actualizar", Actual);
+                    Actual = IReservasPresentacion.Actualizar(Actual);
 
                 Formulario = false;
-                Actual = null;
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
                 Formulario = true;
             }
             finally
             {
-                try
-                {
-                    Lista = reservasPresentacion.Consultar();
-                }
-                catch (Exception ex)
-                {
-                    MostrarError(ex);
-                }
+                OnPostBtBuscar();
+            }
+        }
+
+        public void OnPostBtEditar(string data)
+        {
+            try
+            {
+                int id = Convert.ToInt32(data);
+                Lista = IReservasPresentacion.Consultar();
+                Actual = Lista.FirstOrDefault(r => r.Id == id);
+                Formulario = Actual != null;
+                Borrar = false;
+            }
+            catch (Exception ex)
+            {
+                LogConversor.Log(ex, ViewData!);
             }
         }
 
@@ -120,13 +118,13 @@ namespace Front_Alquiler.Pages.Ventanas
         {
             try
             {
-                Lista = reservasPresentacion.Consultar();
+                Lista = IReservasPresentacion.Consultar();
                 Actual = Lista.FirstOrDefault(r => r.Id == data);
                 Borrar = Actual != null;
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
         }
 
@@ -144,37 +142,18 @@ namespace Front_Alquiler.Pages.Ventanas
                 if (Actual == null || Actual.Id <= 0)
                     throw new InvalidOperationException("No se recibió la reserva que se quiere eliminar.");
 
-                EjecutarApi<Reservas>("Reservas/Borrar", Actual);
+                IReservasPresentacion.Borrar(Actual);
                 Borrar = false;
                 Actual = null;
             }
             catch (Exception ex)
             {
-                MostrarError(ex);
+                LogConversor.Log(ex, ViewData!);
             }
             finally
             {
-                try
-                {
-                    Lista = reservasPresentacion.Consultar();
-                }
-                catch (Exception ex)
-                {
-                    MostrarError(ex);
-                }
+                OnPostBtRefrescar();
             }
-        }
-
-        private T EjecutarApi<T>(string url, object entidad)
-        {
-            var task = comunicaciones.Ejecutar<T>(url, entidad);
-            task.Wait();
-            return task.Result;
-        }
-
-        private void MostrarError(Exception ex)
-        {
-            ViewData["Mensaje"] = ex.GetBaseException().Message;
         }
     }
 }

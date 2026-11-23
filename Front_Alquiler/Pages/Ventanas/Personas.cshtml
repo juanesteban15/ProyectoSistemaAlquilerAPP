@@ -1,0 +1,125 @@
+@page
+@model PersonasModel
+@{
+    ViewData["Title"] = "Personas";
+}
+
+<form method="post">
+    <div class="text-center">
+        <h1 class="display-4">Personas</h1>
+
+        @if (ViewData.ContainsKey("Mensaje"))
+        {
+            <div class="alert alert-danger">@ViewData["Mensaje"]</div>
+        }
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-secondary" asp-page-handler="BtRefrescar">Ver personas</button>
+            <button type="submit" class="btn btn-secondary" asp-page-handler="BtNuevo">Nueva persona</button>
+        </div>
+
+        @if (Model.Formulario && Model.Actual != null)
+        {
+            <div class="mb-4">
+                <h3>@(Model.Actual.Id == 0 ? "Nueva persona" : "Editar persona")</h3>
+                <input type="hidden" asp-for="Actual.Id" />
+
+                <label asp-for="Actual.Nombre">Nombre</label>
+                <input asp-for="Actual.Nombre" />
+                <br />
+
+                <label asp-for="Actual.Apellido">Apellido</label>
+                <input asp-for="Actual.Apellido" />
+                <br />
+
+                <label asp-for="Actual.Email">Correo</label>
+                <input asp-for="Actual.Email" type="email" />
+                <br />
+
+                <label asp-for="Actual.TipoDocumento">Tipo de documento</label>
+                <input asp-for="Actual.TipoDocumento" />
+                <br />
+
+                <label asp-for="Actual.NumeroDocumento">Número de documento</label>
+                <input asp-for="Actual.NumeroDocumento" />
+                <br />
+
+                <label asp-for="Actual.FechaNacimiento">Fecha de nacimiento</label>
+                <input asp-for="Actual.FechaNacimiento" type="date" />
+                <br />
+
+                <label asp-for="Actual.PaisNacimiento">País de nacimiento</label>
+                <input asp-for="Actual.PaisNacimiento" />
+                <br />
+
+                <label asp-for="Actual.Genero">Género</label>
+                <input asp-for="Actual.Genero" />
+                <br />
+
+                <label asp-for="Actual.ComplementoPais">Indicativo telefónico</label>
+                <input asp-for="Actual.ComplementoPais" />
+                <br />
+
+                <label asp-for="Actual.Telefono">Teléfono</label>
+                <input asp-for="Actual.Telefono" />
+                <br />
+
+                <button type="submit" class="btn btn-primary" asp-page-handler="BtGuardar">Guardar</button>
+                <button type="submit" class="btn btn-secondary" asp-page-handler="BtCancelar">Cancelar</button>
+            </div>
+        }
+
+        @if (!Model.Formulario)
+        {
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Correo</th>
+                            <th>Tipo documento</th>
+                            <th>Número documento</th>
+                            <th>Teléfono</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var elemento in Model.Lista)
+                        {
+                            <tr>
+                                <td>@elemento.Id</td>
+                                <td>@elemento.Nombre</td>
+                                <td>@elemento.Apellido</td>
+                                <td>@elemento.Email</td>
+                                <td>@elemento.TipoDocumento</td>
+                                <td>@elemento.NumeroDocumento</td>
+                                <td>@elemento.Telefono</td>
+                                <td>
+                                    <button type="submit" class="btn btn-secondary btn-sm"
+                                            asp-page-handler="BtEditar" asp-route-data="@elemento.Id">Editar</button>
+                                    <button type="submit" class="btn btn-danger btn-sm"
+                                            asp-page-handler="BtPregBorrar" asp-route-data="@elemento.Id">Borrar</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        @if (Model.Borrar && Model.Actual != null)
+        {
+            <div class="popup">
+                <div class="pp_del_inner">
+                    <h3>Confirmar eliminación</h3>
+                    <p>¿Deseas eliminar a <strong>@Model.Actual.Nombre @Model.Actual.Apellido</strong>?</p>
+                    <input type="hidden" asp-for="Actual.Id" />
+                    <button type="submit" class="btn btn-secondary" asp-page-handler="BtCancelar">Cancelar</button>
+                    <button type="submit" class="btn btn-danger" asp-page-handler="BtBorrar">Confirmar</button>
+                </div>
+            </div>
+        }
+    </div>
+</form>

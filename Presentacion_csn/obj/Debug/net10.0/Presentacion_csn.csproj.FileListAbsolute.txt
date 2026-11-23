@@ -719,3 +719,4 @@ C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_C
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_CSN\obj\Debug\net10.0\Presentacion_CSN.pdb
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_CSN\obj\Debug\net10.0\Presentacion_CSN.genruntimeconfig.cache
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_CSN\obj\Debug\net10.0\ref\Presentacion_CSN.dll
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_CSN\obj\Debug\net10.0\Presentacion_CSN.sourcelink.json

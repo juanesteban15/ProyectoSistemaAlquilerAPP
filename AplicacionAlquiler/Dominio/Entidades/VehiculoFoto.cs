@@ -11,7 +11,7 @@ namespace AplicacionAlquiler.Dominio.Entidades
         public int Id { get; set; }
         public string? Ruta { get; set; } 
         public int? Vehiculo { get; set; }
-        [JsonIgnore] [ForeignKey("Vehiculo")] public Vehiculos _Vehiculo { get; set; }
+        [JsonIgnore] [ForeignKey("Vehiculo")] public Vehiculos? _Vehiculo { get; set; }
 
 
     }

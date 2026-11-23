@@ -12,7 +12,7 @@ namespace AplicacionAlquiler.Dominio.Entidades
         public bool Activa { get; set; }
 
 
-        [ForeignKey("Vehiculo")] public Vehiculos _Vehiculo { get; set; }
+        [ForeignKey("Vehiculo")] public Vehiculos? _Vehiculo { get; set; }
 
         [JsonIgnore] public List<Reservas>? Reservas { get; set; }
 

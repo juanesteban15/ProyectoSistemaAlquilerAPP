@@ -32,7 +32,7 @@ else
                 <article class="card h-100 shadow-sm">
                     @if (!string.IsNullOrWhiteSpace(foto?.Ruta))
                     {
-                        <img src="@foto.Ruta"
+                        <img src="data:image/jpeg;base64,@foto.Ruta"
                              class="card-img-top"
                              alt="Foto de @vehiculo._Marca?.Nombre"
                              style="height: 190px; object-fit: contain; background-color: #f8f9fa;" />
@@ -65,14 +65,23 @@ else
                             @(vehiculo._SistemaTransmision?.Nombre ?? "No especificada")
                         </p>
 
-                        <p class="mb-0">
+                        <p class="mb-1">
                             <strong>Combustible:</strong>
                             @(vehiculo._TipoCombustible?.Nombre ?? "No especificado")
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>Propietario:</strong>
+                            @(vehiculo._Propietario?.NombreUsuario ?? "No especificado")
                         </p>
                     </div>
 
                     <div class="card-footer bg-white border-0">
-                        <small class="text-muted">Placa: @vehiculo.Placa</small>
+                        <a asp-page="/Ventanas/DetalleVehiculo"
+                           asp-route-id="@vehiculo.Id"
+                           class="btn btn-outline-primary">
+                            Ver detalles
+                        </a>
                     </div>
                 </article>
             </div>

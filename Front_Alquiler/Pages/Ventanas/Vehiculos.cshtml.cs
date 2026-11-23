@@ -1,11 +1,14 @@
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.interfaces;
 using AplicacionAlquiler.nucleo;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Front_Alquiler.Pages.Ventanas
 {
+
+    [Authorize(Roles = "Admin")]
     public class VehiculosModel : PageModel
     {
         private IVehiculosPresentacion IVehiculosPresentacion;
@@ -18,6 +21,7 @@ namespace Front_Alquiler.Pages.Ventanas
 
 
         [BindProperty] public List<Vehiculos> Lista { get; set; }
+
         [BindProperty] public Vehiculos? Filtro { get; set; }
         [BindProperty] public Vehiculos? Actual { get; set; }
         [BindProperty] public bool Formulario { get; set; } = false;
@@ -30,6 +34,9 @@ namespace Front_Alquiler.Pages.Ventanas
             try
             {
                 Lista = this.IVehiculosPresentacion.Consultar();
+
+
+
             }
             catch (Exception ex)
             {
@@ -57,14 +64,14 @@ namespace Front_Alquiler.Pages.Ventanas
         {
             try
             {
-                Filtro!.Placa=Filtro!.Placa?? "";
+                Filtro!.Placa = Filtro!.Placa ?? "";
                 Lista = this.IVehiculosPresentacion.Buscar(Filtro!);
             }
             catch (Exception ex)
             {
                 LogConversor.Log(ex, ViewData!);
             }
-        }   
+        }
 
 
 
@@ -83,12 +90,19 @@ namespace Front_Alquiler.Pages.Ventanas
 
         public void OnPostBtGuardar()
         {
+
+      
+
             try
             {
+
                 if (this.Actual!.Id == 0)
                     this.Actual = this.IVehiculosPresentacion.Insertar(this.Actual!);
                 else
                     this.Actual = this.IVehiculosPresentacion.Actualizar(this.Actual!);
+
+
+
             }
             catch (Exception ex)
             {
@@ -125,7 +139,7 @@ namespace Front_Alquiler.Pages.Ventanas
 
 
 
-        public void OnPostBtPregBorrar(int  data)
+        public void OnPostBtPregBorrar(int data)
         {
             try
             {

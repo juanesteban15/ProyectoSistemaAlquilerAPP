@@ -1,3 +1,4 @@
+using AplicacionAlquiler.Dominio.DTOs;
 using AplicacionAlquiler.Dominio.Entidades;
 
 namespace AplicacionAlquiler.interfaces
@@ -9,5 +10,6 @@ namespace AplicacionAlquiler.interfaces
         List<Vehiculos> Consultar();
         List<Vehiculos> Buscar(Vehiculos entidad);
         Vehiculos Borrar(Vehiculos entidad);
+        CrearVehiculoClienteResponse CrearParaCliente(CrearVehiculoClienteRequest solicitud);
     }
 }

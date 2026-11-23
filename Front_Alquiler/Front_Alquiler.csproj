@@ -11,6 +11,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Pages\Ventanas\PublicarVehiculo.cshtml">
+      <CopyToOutputDirectory>ConsultarVehiculos</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Pages\Ventanas\DetalleVehiculo.cshtml">
+      <CopyToOutputDirectory>ConsultarVehiculos</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Pages\Ventanas\VehiculoFoto.cshtml">
+      <CopyToOutputDirectory>ConsultarVehiculos</CopyToOutputDirectory>
+    </Content>
     <Content Update="Pages\Ventanas\Vehiculos.cshtml">
       <CopyToOutputDirectory>ConsultarVehiculos</CopyToOutputDirectory>
     </Content>

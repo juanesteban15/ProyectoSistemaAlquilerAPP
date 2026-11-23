@@ -25,6 +25,7 @@ namespace AplicacionAlquiler.Dominio.Entidades
 
 
 
+
         //foreign key
         [ForeignKey("TipoVehiculo")] public TiposVehiculos? _TipoVehiculo { get; set; }
         [ForeignKey("ColorVehiculo")] public ColoresVehiculos? _ColorVehiculo { get; set; }

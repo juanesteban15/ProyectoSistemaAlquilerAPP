@@ -18,10 +18,696 @@
     ]
   },
   {
+    "ContainingType": "APLICACIONWEB.Controllers.CategoriasController",
+    "Method": "Actualizar",
+    "RelativePath": "Categorias/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Categorias",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Categorias",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.CategoriasController",
+    "Method": "Borrar",
+    "RelativePath": "Categorias/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Categorias",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Categorias",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.CategoriasController",
+    "Method": "Consultar",
+    "RelativePath": "Categorias/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.Categorias, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.CategoriasController",
+    "Method": "Insertar",
+    "RelativePath": "Categorias/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Categorias",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Categorias",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ColoresVehiculosController",
+    "Method": "Actualizar",
+    "RelativePath": "ColoresVehiculos/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.ColoresVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.ColoresVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ColoresVehiculosController",
+    "Method": "Borrar",
+    "RelativePath": "ColoresVehiculos/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.ColoresVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.ColoresVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ColoresVehiculosController",
+    "Method": "Consultar",
+    "RelativePath": "ColoresVehiculos/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.ColoresVehiculos, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.ColoresVehiculosController",
+    "Method": "Insertar",
+    "RelativePath": "ColoresVehiculos/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.ColoresVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.ColoresVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosReservasController",
+    "Method": "Actualizar",
+    "RelativePath": "EstadosReservas/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosReservas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosReservas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosReservasController",
+    "Method": "Borrar",
+    "RelativePath": "EstadosReservas/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosReservas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosReservas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosReservasController",
+    "Method": "Consultar",
+    "RelativePath": "EstadosReservas/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.EstadosReservas, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosReservasController",
+    "Method": "Insertar",
+    "RelativePath": "EstadosReservas/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosReservas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosReservas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosUsuariosController",
+    "Method": "Actualizar",
+    "RelativePath": "EstadosUsuarios/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosUsuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosUsuarios",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosUsuariosController",
+    "Method": "Borrar",
+    "RelativePath": "EstadosUsuarios/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosUsuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosUsuarios",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosUsuariosController",
+    "Method": "Consultar",
+    "RelativePath": "EstadosUsuarios/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.EstadosUsuarios, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosUsuariosController",
+    "Method": "Insertar",
+    "RelativePath": "EstadosUsuarios/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosUsuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosUsuarios",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosVehiculosController",
+    "Method": "Actualizar",
+    "RelativePath": "EstadosVehiculos/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosVehiculosController",
+    "Method": "Borrar",
+    "RelativePath": "EstadosVehiculos/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosVehiculosController",
+    "Method": "Consultar",
+    "RelativePath": "EstadosVehiculos/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.EstadosVehiculos, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.EstadosVehiculosController",
+    "Method": "Insertar",
+    "RelativePath": "EstadosVehiculos/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.EstadosVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.MarcasController",
+    "Method": "Actualizar",
+    "RelativePath": "Marcas/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Marcas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Marcas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.MarcasController",
+    "Method": "Borrar",
+    "RelativePath": "Marcas/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Marcas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Marcas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.MarcasController",
+    "Method": "Consultar",
+    "RelativePath": "Marcas/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.Marcas, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.MarcasController",
+    "Method": "Insertar",
+    "RelativePath": "Marcas/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Marcas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.Marcas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.MetodosPagosController",
+    "Method": "Actualizar",
+    "RelativePath": "MetodosPagos/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.MetodosPagos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.MetodosPagos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.MetodosPagosController",
+    "Method": "Borrar",
+    "RelativePath": "MetodosPagos/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.MetodosPagos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.MetodosPagos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.MetodosPagosController",
+    "Method": "Consultar",
+    "RelativePath": "MetodosPagos/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.MetodosPagos, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.MetodosPagosController",
+    "Method": "Insertar",
+    "RelativePath": "MetodosPagos/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.MetodosPagos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.MetodosPagos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "APLICACIONWEB.Controllers.PersonasController",
     "Method": "Actualizar",
     "RelativePath": "Personas/Actualizar",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -47,7 +733,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.PersonasController",
     "Method": "Borrar",
     "RelativePath": "Personas/Borrar",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -73,7 +759,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.PersonasController",
     "Method": "Consultar",
     "RelativePath": "Personas/Consultar",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
@@ -119,7 +805,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.RegistroAuditoriaController",
     "Method": "Consultar",
     "RelativePath": "RegistroAuditoria/Consultar",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
@@ -260,10 +946,108 @@
     ]
   },
   {
+    "ContainingType": "APLICACIONWEB.Controllers.SistemasTransmisionesController",
+    "Method": "Actualizar",
+    "RelativePath": "SistemasTransmisiones/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.SistemasTransmisiones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.SistemasTransmisiones",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.SistemasTransmisionesController",
+    "Method": "Borrar",
+    "RelativePath": "SistemasTransmisiones/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.SistemasTransmisiones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.SistemasTransmisiones",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.SistemasTransmisionesController",
+    "Method": "Consultar",
+    "RelativePath": "SistemasTransmisiones/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.SistemasTransmisiones, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.SistemasTransmisionesController",
+    "Method": "Insertar",
+    "RelativePath": "SistemasTransmisiones/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.SistemasTransmisiones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.SistemasTransmisiones",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "APLICACIONWEB.Controllers.TarifasController",
     "Method": "Actualizar",
     "RelativePath": "Tarifas/Actualizar",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -289,7 +1073,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.TarifasController",
     "Method": "Borrar",
     "RelativePath": "Tarifas/Borrar",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -315,7 +1099,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.TarifasController",
     "Method": "Consultar",
     "RelativePath": "Tarifas/Consultar",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
@@ -358,6 +1142,202 @@
     ]
   },
   {
+    "ContainingType": "APLICACIONWEB.Controllers.TiposCombustiblesController",
+    "Method": "Actualizar",
+    "RelativePath": "TiposCombustibles/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposCombustibles",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposCombustibles",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TiposCombustiblesController",
+    "Method": "Borrar",
+    "RelativePath": "TiposCombustibles/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposCombustibles",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposCombustibles",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TiposCombustiblesController",
+    "Method": "Consultar",
+    "RelativePath": "TiposCombustibles/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.TiposCombustibles, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TiposCombustiblesController",
+    "Method": "Insertar",
+    "RelativePath": "TiposCombustibles/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposCombustibles",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposCombustibles",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TiposVehiculosController",
+    "Method": "Actualizar",
+    "RelativePath": "TiposVehiculos/Actualizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TiposVehiculosController",
+    "Method": "Borrar",
+    "RelativePath": "TiposVehiculos/Borrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TiposVehiculosController",
+    "Method": "Consultar",
+    "RelativePath": "TiposVehiculos/Consultar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Catalogo.TiposVehiculos, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.TiposVehiculosController",
+    "Method": "Insertar",
+    "RelativePath": "TiposVehiculos/Insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposVehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.Catalogo.TiposVehiculos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
     "Method": "Actualizar",
     "RelativePath": "Usuarios/Actualizar",
@@ -387,7 +1367,7 @@
     "ContainingType": "APLICACIONWEB.Controllers.UsuariosController",
     "Method": "Borrar",
     "RelativePath": "Usuarios/Borrar",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -614,7 +1594,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "entidad",
+        "Name": "foto",
         "Type": "AplicacionAlquiler.Dominio.Entidades.VehiculoFoto",
         "IsRequired": true
       }
@@ -720,6 +1700,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[AplicacionAlquiler.Dominio.Entidades.Vehiculos, AplicacionAlquiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APLICACIONWEB.Controllers.VehiculosController",
+    "Method": "CrearParaCliente",
+    "RelativePath": "Vehiculos/CrearParaCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitud",
+        "Type": "AplicacionAlquiler.Dominio.DTOs.CrearVehiculoClienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AplicacionAlquiler.Dominio.DTOs.CrearVehiculoClienteResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -1,0 +1,188 @@
+@page
+@model PublicarVehiculoModel
+
+@{
+    ViewData["Title"] = "Publicar vehículo";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white p-4">
+                    <h1 class="h3 mb-1">Publicar vehículo</h1>
+                    <p class="mb-0">Completa las especificaciones y la tarifa diaria.</p>
+                </div>
+
+                <form method="post" enctype="multipart/form-data">
+                    <div class="card-body p-4">
+                        @if (!string.IsNullOrWhiteSpace(Model.Mensaje))
+                        {
+                            <div class="alert alert-info">@Model.Mensaje</div>
+                        }
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.Placa" class="form-label">Placa</label>
+                                <input asp-for="Solicitud.Placa" class="form-control" required />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.TipoVehiculoId" class="form-label">Tipo de vehículo</label>
+                                <select asp-for="Solicitud.TipoVehiculoId" id="tipoVehiculoSelect" class="form-select" required>
+                                    <option value="">Seleccione el tipo</option>
+                                    @foreach (var tipo in Model.TiposVehiculos)
+                                    {
+                                        <option value="@tipo.Id">@tipo.Nombre</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.MarcaId" class="form-label">Marca</label>
+                                <select asp-for="Solicitud.MarcaId" id="marcaSelect" class="form-select" required>
+                                    <option value="">Seleccione la marca</option>
+                                    @foreach (var marca in Model.Marcas)
+                                    {
+                                        <option value="@marca.Id" data-tipo-vehiculo="@marca.TipoVehiculoId">@marca.Nombre</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.TipoCombustibleId" class="form-label">Combustible</label>
+                                <select asp-for="Solicitud.TipoCombustibleId" id="combustibleSelect" class="form-select" required>
+                                    <option value="">Seleccione el combustible</option>
+                                    @foreach (var combustible in Model.Combustibles)
+                                    {
+                                        <option value="@combustible.Id" data-tipo-vehiculo="@combustible.TipoVehiculoId">@combustible.Nombre</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.ColorVehiculoId" class="form-label">Color</label>
+                                <select asp-for="Solicitud.ColorVehiculoId" class="form-select" required>
+                                    <option value="">Seleccione el color</option>
+                                    @foreach (var color in Model.Colores)
+                                    {
+                                        <option value="@color.Id">@color.Nombre</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.SistemaTransmisionId" class="form-label">Transmisión</label>
+                                <select asp-for="Solicitud.SistemaTransmisionId" id="transmisionSelect" class="form-select" required>
+                                    <option value="">Seleccione la transmisión</option>
+                                    @foreach (var transmision in Model.Transmisiones)
+                                    {
+                                        <option value="@transmision.Id" data-tipo-vehiculo="@transmision.TipoVehiculoId">@transmision.Nombre</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.CategoriaId" class="form-label">Categoría</label>
+                                <select asp-for="Solicitud.CategoriaId" id="categoriaSelect" class="form-select" required>
+                                    <option value="">Seleccione la categoría</option>
+                                    @foreach (var categoria in Model.Categorias)
+                                    {
+                                        <option value="@categoria.Id" data-tipo-vehiculo="@categoria.TipoVehiculoId">@categoria.Nombre</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.Modelo" class="form-label">Modelo (año)</label>
+                                <input asp-for="Solicitud.Modelo"
+                                       class="form-control"
+                                       type="number"
+                                       min="1950"
+                                       max="@(DateTime.Today.Year + 1)"
+                                       required />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.PrecioPorDia" class="form-label">Precio por día</label>
+                                <input asp-for="Solicitud.PrecioPorDia"
+                                       class="form-control"
+                                       type="number"
+                                       min="0.01"
+                                       step="0.01"
+                                       required />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Solicitud.FechaInicioTarifa" class="form-label">Inicio de la tarifa</label>
+                                <input asp-for="Solicitud.FechaInicioTarifa"
+                                       class="form-control"
+                                       type="date"
+                                       required />
+                            </div>
+
+                            <div class="col-12">
+                                <label asp-for="FormFile" class="form-label">Foto del vehículo</label>
+                                <input asp-for="FormFile"
+                                       class="form-control"
+                                       type="file"
+                                       accept="image/*" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-white border-0 p-4 pt-0">
+                        <button type="submit" class="btn btn-primary px-4" asp-page-handler="Guardar">
+                            Publicar vehículo
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (() => {
+            const tipoVehiculo = document.getElementById("tipoVehiculoSelect");
+            const idsDependientes = [
+                "marcaSelect",
+                "combustibleSelect",
+                "transmisionSelect",
+                "categoriaSelect"
+            ];
+
+            function filtrarCatalogos() {
+                const tipoId = tipoVehiculo.value;
+
+                for (const id of idsDependientes) {
+                    const select = document.getElementById(id);
+                    const valorActual = select.value;
+                    let valorSigueDisponible = false;
+
+                    for (const opcion of select.options) {
+                        if (opcion.value === "") {
+                            opcion.hidden = false;
+                            opcion.disabled = false;
+                            continue;
+                        }
+
+                        const coincide = opcion.dataset.tipoVehiculo === tipoId;
+                        opcion.hidden = !coincide;
+                        opcion.disabled = !coincide;
+
+                        if (coincide && opcion.value === valorActual)
+                            valorSigueDisponible = true;
+                    }
+
+                    if (!valorSigueDisponible)
+                        select.value = "";
+                }
+            }
+
+            tipoVehiculo.addEventListener("change", filtrarCatalogos);
+            filtrarCatalogos();
+        })();
+    </script>
+}

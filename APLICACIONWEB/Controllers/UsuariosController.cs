@@ -59,7 +59,7 @@ namespace APLICACIONWEB.Controllers
 
 
 
-        [HttpDelete]
+        [HttpPost]
         public Usuarios Borrar([FromBody] Usuarios entidad) => aplicacion.Borrar(entidad);
     }
 }

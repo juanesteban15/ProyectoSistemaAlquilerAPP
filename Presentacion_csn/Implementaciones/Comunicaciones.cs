@@ -22,6 +22,7 @@ namespace Presentacion_CSN.Implementaciones
             if (!message.IsSuccessStatusCode)
                 throw new Exception("Error Comunicacion");
 
+
             var respuesta = await message.Content.ReadAsStringAsync();
             cliente_http.Dispose();
             cliente_http = null;

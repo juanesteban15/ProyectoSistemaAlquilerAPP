@@ -706,4 +706,5 @@ C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_M
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_MST\obj\Debug\net10.0\Presentacion_MST.pdb
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_MST\obj\Debug\net10.0\Presentacion_MST.genruntimeconfig.cache
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_MST\obj\Debug\net10.0\ref\Presentacion_MST.dll
-C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_mst\obj\Debug\net10.0\Presenta.E34F932F.Up2Date
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_MST\obj\Debug\net10.0\Presentacion_MST.sourcelink.json
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\Presentacion_MST\obj\Debug\net10.0\Presenta.67537FCF.Up2Date

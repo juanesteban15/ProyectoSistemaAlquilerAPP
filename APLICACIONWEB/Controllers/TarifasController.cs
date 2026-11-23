@@ -15,16 +15,16 @@ namespace APLICACIONWEB.Controllers
             this.aplicacion = aplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<Tarifas> Consultar() => aplicacion.Consultar();
 
         [HttpPost]
         public Tarifas Insertar([FromBody] Tarifas entidad) => aplicacion.Insertar(entidad);
 
-        [HttpPut]
+        [HttpPost]
         public Tarifas Actualizar([FromBody] Tarifas entidad) => aplicacion.Actualizar(entidad);
 
-        [HttpDelete]
+        [HttpPost]
         public Tarifas Borrar([FromBody] Tarifas entidad) => aplicacion.Borrar(entidad);
     }
 }

@@ -1,3 +1,4 @@
+using AplicacionAlquiler.Dominio.DTOs;
 using AplicacionAlquiler.Dominio.Entidades;
 using AplicacionAlquiler.interfaces;
 using AplicacionAlquiler.Servicio;
@@ -7,13 +8,19 @@ namespace AplicacionAlquiler.implementaciones
 {
     public class VehiculosAplicacion : IVehiculosAplicacion
     {
+        private readonly ITarifasAplicacion tarifasAplicacion;
+
         private readonly IConexion IConexion;
         private readonly IRegistroAuditoriaAplicacion auditoria;
 
-        public VehiculosAplicacion(IConexion IConexion, IRegistroAuditoriaAplicacion auditoria)
+        public VehiculosAplicacion(
+            IConexion IConexion,
+            IRegistroAuditoriaAplicacion auditoria,
+            ITarifasAplicacion tarifasAplicacion)
         {
             this.IConexion = IConexion;
             this.auditoria = auditoria;
+            this.tarifasAplicacion = tarifasAplicacion;
         }
 
         public Vehiculos Actualizar(Vehiculos entidad)
@@ -139,7 +146,97 @@ namespace AplicacionAlquiler.implementaciones
 
 
 
+        public CrearVehiculoClienteResponse CrearParaCliente(CrearVehiculoClienteRequest solicitud)
+        {
+            using var transaccion = IConexion.Database.BeginTransaction();
 
+            try
+            {
+                var estadoDisponible = IConexion.EstadosVehiculos!
+                    .FirstOrDefault(x => x.Nombre == "Disponible");
+
+                if (estadoDisponible == null)
+                    throw new InvalidOperationException(
+                        "No existe el estado de vehículo Disponible.");
+
+                if (!IConexion.Marcas!.Any(x =>
+                        x.Id == solicitud.MarcaId &&
+                        x.TipoVehiculoId == solicitud.TipoVehiculoId))
+                    throw new InvalidOperationException(
+                        "La marca no corresponde al tipo de vehículo seleccionado.");
+
+                if (!IConexion.TiposCombustibles!.Any(x =>
+                        x.Id == solicitud.TipoCombustibleId &&
+                        x.TipoVehiculo == solicitud.TipoVehiculoId))
+                    throw new InvalidOperationException(
+                        "El combustible no corresponde al tipo de vehículo seleccionado.");
+
+                if (!IConexion.SistemasTransmisiones!.Any(x =>
+                        x.Id == solicitud.SistemaTransmisionId &&
+                        x.TipoVehiculo == solicitud.TipoVehiculoId))
+                    throw new InvalidOperationException(
+                        "La transmisión no corresponde al tipo de vehículo seleccionado.");
+
+                if (!IConexion.Categorias!.Any(x =>
+                        x.Id == solicitud.CategoriaId &&
+                        x.TipoVehiculo == solicitud.TipoVehiculoId))
+                    throw new InvalidOperationException(
+                        "La categoría no corresponde al tipo de vehículo seleccionado.");
+
+                var vehiculo = new Vehiculos
+                {
+                    Placa = solicitud.Placa,
+                    Propietario = solicitud.PropietarioId,
+
+                    TipoVehiculo = solicitud.TipoVehiculoId,
+                    Marca = solicitud.MarcaId,
+                    TipoCombustible = solicitud.TipoCombustibleId,
+                    ColorVehiculo = solicitud.ColorVehiculoId,
+                    SistemaTransmision = solicitud.SistemaTransmisionId,
+                    Categoria = solicitud.CategoriaId,
+                    Modelo = solicitud.Modelo,
+
+                    EstadoVehiculo = estadoDisponible.Id,
+                    Estado = true,
+                    FechaRegistro = DateTime.Now,
+                    FechaEliminacion = null,
+                    VehiculoFoto = string.IsNullOrWhiteSpace(solicitud.FotoBase64)? new List<VehiculoFoto>(): new List<VehiculoFoto>
+                     {
+                        new VehiculoFoto
+                         {
+                            Ruta = solicitud.FotoBase64
+                        }
+                     }
+
+
+
+                };
+
+                // Inserta el vehículo y sus fotos. Al volver, vehiculo.Id ya está generado.
+                vehiculo = Insertar(vehiculo);
+
+                var tarifa = tarifasAplicacion.Insertar(new Tarifas
+                {
+                    Vehiculo = vehiculo.Id,
+                    PrecioPorDia = solicitud.PrecioPorDia,
+                    FechaInicio = solicitud.FechaInicioTarifa,
+                    Activa = true
+                });
+
+                transaccion.Commit();
+
+                return new CrearVehiculoClienteResponse
+                {
+                    VehiculoId = vehiculo.Id,
+                    TarifaId = tarifa.Id
+                };
+            }
+            catch
+            {
+                transaccion.Rollback();
+                throw;
+            }
+        }
 
 
 
@@ -148,6 +245,8 @@ namespace AplicacionAlquiler.implementaciones
             // Comprueba que la placa no esté registrada; la placa identifica al vehículo en este flujo.
             var vehiculoConMismaPlaca = IConexion.Vehiculos!
                 .FirstOrDefault(v => v.Placa == entidad.Placa);
+            var fotos = entidad.VehiculoFoto ?? new List<VehiculoFoto>();
+            entidad.VehiculoFoto = null;
 
             if (vehiculoConMismaPlaca != null)
             {
@@ -172,8 +271,30 @@ namespace AplicacionAlquiler.implementaciones
             if (entidad.TipoCombustible.HasValue && !IConexion.TiposCombustibles!.Any(x => x.Id == entidad.TipoCombustible.Value))
                 throw new InvalidOperationException($"No existe un tipo de combustible con el Id {entidad.TipoCombustible}.");
 
+
+
             this.IConexion.Vehiculos!.Add(entidad);
             this.IConexion.SaveChanges();
+
+
+            foreach (var foto in fotos)
+            {
+                foto.Id = 0;
+                foto.Vehiculo = entidad.Id;
+                foto._Vehiculo = null!;
+
+                IConexion.VehiculoFotos!.Add(foto);
+            }
+
+            if (fotos.Count > 0)
+                IConexion.SaveChanges();
+
+            entidad.VehiculoFoto = fotos;
+
+
+
+
+
             auditoria.Insertar(new RegistroAuditoria { FechaUtc = DateTime.UtcNow, Movimiento = "INSERT", Detalle = $"Se insertó el vehículo con Id {entidad.Id}" });
             return entidad;
         }

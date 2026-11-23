@@ -24,7 +24,7 @@ namespace AplicacionAlquiler.Dominio.Entidades
 
 
         //-------FOREIGN KEY---------//
-        [ForeignKey("Persona")] public Personas _Persona { get; set; }
+        [ForeignKey("Persona")] public Personas? _Persona { get; set; }
 
         [ForeignKey("Estadousuario")] public EstadosUsuarios? _EstadoUsuario { get; set; }
 

@@ -15,7 +15,7 @@ namespace APLICACIONWEB.Controllers
             this.aplicacion = aplicacion;
         }
 
-        [HttpGet]
+        [HttpPost]
         public List<RegistroAuditoria> Consultar() => aplicacion.Consultar();
     }
 }

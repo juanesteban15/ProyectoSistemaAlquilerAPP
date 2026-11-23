@@ -19,8 +19,15 @@ namespace AplicacionAlquiler.interfaces
                 throw new Exception("La foto ya está guardada.");
 
             var task = comunicaciones.Ejecutar<VehiculoFoto>("VehiculoFoto/Insertar", entidad);
-            task.Wait();
-            return task.Result;
+            try
+            {
+                task.Wait();
+                return task.Result;
+            }
+            catch (AggregateException ex)
+            {
+                throw ex.GetBaseException();
+            }
         }
 
         public VehiculoFoto Actualizar(VehiculoFoto entidad)

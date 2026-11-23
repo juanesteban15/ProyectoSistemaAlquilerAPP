@@ -173,10 +173,11 @@ C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\APLICACI.F907884E.Up2Date
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\APLICACIONWEB.dll
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\refint\APLICACIONWEB.dll
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\APLICACIONWEB.pdb
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\APLICACIONWEB.genruntimeconfig.cache
 C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\ref\APLICACIONWEB.dll
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\APLICACIONWEB.sourcelink.json
+C:\Users\lenov\OneDrive\Documents\ProyectoSistemaAlquilerAPP-main\APLICACIONWEB\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

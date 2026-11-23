@@ -1,0 +1,132 @@
+@page
+@model DetalleVehiculoModel
+
+@{
+    ViewData["Title"] = "Detalle del vehículo";
+}
+
+@if (Model.Vehiculo == null)
+{
+    <div class="alert alert-warning my-4">
+        No se encontró el vehículo o ya no está disponible.
+    </div>
+}
+else
+{
+    <div class="container py-4">
+        <a asp-page="/Index" class="btn btn-outline-secondary mb-3">
+            Volver a vehículos
+        </a>
+
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <h1 class="h2">
+                    @Model.Vehiculo._Marca?.Nombre
+                    @Model.Vehiculo._TipoVehiculo?.Nombre
+                </h1>
+
+                <span class="badge bg-success mb-3">Disponible</span>
+
+                <h2 class="h5 mt-3">Fotos</h2>
+
+                @if (Model.Vehiculo.VehiculoFoto?
+                    .Any(f => !string.IsNullOrWhiteSpace(f.Ruta)) == true)
+                {
+                    <div class="row g-3 mb-4">
+                        @foreach (var foto in Model.Vehiculo.VehiculoFoto!
+                            .Where(f => !string.IsNullOrWhiteSpace(f.Ruta)))
+                        {
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <img src="data:image/jpeg;base64,@foto.Ruta"
+                                     class="img-fluid rounded border"
+                                     alt="Foto del vehículo"
+                                     style="width:100%; height:240px; object-fit:contain; background:#f8f9fa;" />
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted">Este vehículo no tiene fotografías.</p>
+                }
+
+                <h2 class="h5">Especificaciones</h2>
+
+                <dl class="row">
+                    <dt class="col-sm-4">Placa</dt>
+                    <dd class="col-sm-8">@Model.Vehiculo.Placa</dd>
+
+                    <dt class="col-sm-4">Tipo</dt>
+                    <dd class="col-sm-8">@Model.Vehiculo._TipoVehiculo?.Nombre</dd>
+
+                    <dt class="col-sm-4">Marca</dt>
+                    <dd class="col-sm-8">@Model.Vehiculo._Marca?.Nombre</dd>
+
+                    <dt class="col-sm-4">Modelo</dt>
+                    <dd class="col-sm-8">@Model.Vehiculo.Modelo</dd>
+
+                    <dt class="col-sm-4">Color</dt>
+                    <dd class="col-sm-8">
+                        @(Model.Vehiculo._ColorVehiculo?.Nombre ?? "No especificado")
+                    </dd>
+
+                    <dt class="col-sm-4">Transmisión</dt>
+                    <dd class="col-sm-8">
+                        @(Model.Vehiculo._SistemaTransmision?.Nombre ?? "No especificada")
+                    </dd>
+
+                    <dt class="col-sm-4">Combustible</dt>
+                    <dd class="col-sm-8">
+                        @(Model.Vehiculo._TipoCombustible?.Nombre ?? "No especificado")
+                    </dd>
+
+                    <dt class="col-sm-4">Categoría</dt>
+                    <dd class="col-sm-8">
+                        @(Model.Vehiculo._Categoria?.Nombre ?? "No especificada")
+                    </dd>
+                </dl>
+
+                <h2 class="h5">Dueño</h2>
+                <p>
+                    @(Model.Vehiculo._Propietario?._Persona?.Nombre
+                      ?? Model.Vehiculo._Propietario?.NombreUsuario
+                      ?? "No especificado")
+                    @Model.Vehiculo._Propietario?._Persona?.Apellido
+                </p>
+
+                @if (Model.Tarifa != null)
+                {
+                    <p class="fs-5">
+                        <strong>Tarifa:</strong>
+                        @Model.Tarifa.PrecioPorDia.ToString("C") por día
+                    </p>
+
+                    @if (User.IsInRole("Cliente"))
+                    {
+                        <a asp-page="/Ventanas/ReservarVehiculo"
+                           asp-route-vehiculoId="@Model.Vehiculo.Id"
+                           class="btn btn-primary">
+                            Reservar
+                        </a>
+                    }
+                    else if (User.Identity?.IsAuthenticated != true)
+                    {
+                        <a asp-page="/Cuenta/IniciarSesion"
+                           asp-route-returnUrl="@Url.Page(
+                               "/Ventanas/DetalleVehiculo",
+                               new { id = Model.Vehiculo.Id })"
+                           class="btn btn-outline-primary">
+                            Iniciar sesión para reservar
+                        </a>
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        Este vehículo no tiene una tarifa activa.
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
